@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="DB_JT18" Class="LTSJT18DataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=TOPHNB3690\SQLEXPRESS01;Initial Catalog=DB_JT18;Integrated Security=True" SettingsObjectName="WinForms.Properties.Settings" SettingsPropertyName="DB_JT18ConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.TBL_R_CONTRACTOR" Member="TBL_R_CONTRACTORs">
+    <Type Name="TBL_R_CONTRACTOR">
+      <Column Name="CONTRACTOR_CODE" Type="System.String" DbType="VarChar(5) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="CONTRACTOR_NAME" Type="System.String" DbType="VarChar(200) NOT NULL" CanBeNull="false" />
+      <Column Name="CONTRACTOR_AKTIF" Type="System.String" DbType="VarChar(1) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TBL_R_CPP" Member="TBL_R_CPPs">
+    <Type Name="TBL_R_CPP">
+      <Column Name="CPP_CODE" Type="System.String" DbType="VarChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="CPP_ENTITY" Type="System.String" DbType="VarChar(5) NOT NULL" CanBeNull="false" />
+      <Column Name="CPP_LOKASI" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="CPP_DESC" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="CPP_AKTIF" Type="System.String" DbType="VarChar(1) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TBL_R_ENTITY" Member="TBL_R_ENTITies">
+    <Type Name="TBL_R_ENTITY">
+      <Column Name="ENTITY_CODE" Type="System.String" DbType="VarChar(5) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ENTITY_NAME" Type="System.String" DbType="VarChar(200) NOT NULL" CanBeNull="false" />
+      <Column Name="ENTITY_AKTIF" Type="System.String" DbType="VarChar(1) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TBL_R_PRODUCT" Member="TBL_R_PRODUCTs">
+    <Type Name="TBL_R_PRODUCT">
+      <Column Name="PRODUCT_CODE" Type="System.String" DbType="VarChar(20) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="PRODUCT_ENTITY" Type="System.String" DbType="VarChar(5) NOT NULL" CanBeNull="false" />
+      <Column Name="PRODUCT_NAME" Type="System.String" DbType="VarChar(200) NOT NULL" CanBeNull="false" />
+      <Column Name="PRODUCT_DESC" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="PRODUCT_ACTIVE" Type="System.String" DbType="VarChar(1) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TBL_R_STOCKPILE" Member="TBL_R_STOCKPILEs">
+    <Type Name="TBL_R_STOCKPILE">
+      <Column Name="STOCKPILE_CODE" Type="System.String" DbType="VarChar(20) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="STOCKPILE_NAME" Type="System.String" DbType="VarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="STOCKPILE_LOKASI" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="STOCKPILE_DESC" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="STOCKPILE_AKTIF" Type="System.String" DbType="NChar(10) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TBL_R_UNIT" Member="TBL_R_UNITs">
+    <Type Name="TBL_R_UNIT">
+      <Column Name="UNIT_NO" Type="System.String" DbType="VarChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="UNIT_ENTITY" Type="System.String" DbType="VarChar(5) NOT NULL" CanBeNull="false" />
+      <Column Name="UNIT_EGI" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="UNIT_KONTRAKTOR" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="UNIT_DEFAULT_TARE" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="UNIT_AKTIF" Type="System.String" DbType="VarChar(1) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TBL_T_TARE_UNIT" Member="TBL_T_TARE_UNITs">
+    <Type Name="TBL_T_TARE_UNIT">
+      <Column Name="TARE_RAW_ID" Type="System.String" DbType="VarChar(200) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="TARE_UNIT_NO" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="TARE_VALUE" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="TARE_DATETIME" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TBL_T_TRANSAKSI_18" Member="TBL_T_TRANSAKSI_18s">
+    <Type Name="TBL_T_TRANSAKSI_18">
+      <Column Name="TRANS_RAW_ID" Type="System.String" DbType="VarChar(200) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="TRANS_UNIT" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="TRANS_ENTITY" Type="System.String" DbType="VarChar(5) NOT NULL" CanBeNull="false" />
+      <Column Name="TRANS_CPP" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="TRANS_PRODUCT" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="TRANS_STOCKPILE" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="TRANS_LOADER" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="TRANS_GROSS" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="TRANS_TARE" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="TRANS_START_TIMBANG" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="TRANS_DATETIME" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="TRANS_UPDATE_AT" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="TRANS_OPERATOR" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="TRANS_DOCKET_ID" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>

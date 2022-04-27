@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 10.5" name="LTSJT18">
+  <DataContextMoniker Name="/LTSJT18DataContext" />
+  <nestedChildShapes>
+    <classShape Id="4c58b497-5977-4c1d-8574-f289f76c3445" absoluteBounds="1.25, 0.875, 2, 1.3862939453125">
+      <DataClassMoniker Name="/LTSJT18DataContext/TBL_R_CONTRACTOR" />
+      <nestedChildShapes>
+        <elementListCompartment Id="cc5b0b26-522a-4f48-a542-6d134e18bf41" absoluteBounds="1.2650000000000001, 1.335, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="0d749577-b4e3-4613-9a44-57946b4ef958" absoluteBounds="3.75, 1.125, 2, 1.7708968098958331">
+      <DataClassMoniker Name="/LTSJT18DataContext/TBL_R_CPP" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a3d021bc-eaf6-42de-b72d-e3ab13420200" absoluteBounds="3.765, 1.585, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="6b0defb5-6fe6-44b2-8e28-86f1ef4615cf" absoluteBounds="0.75, 3.625, 2, 1.3862939453125">
+      <DataClassMoniker Name="/LTSJT18DataContext/TBL_R_ENTITY" />
+      <nestedChildShapes>
+        <elementListCompartment Id="475fff01-aa55-41fe-8c69-d1b9c8a23927" absoluteBounds="0.765, 4.085, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="7323381e-4f21-45c2-9aca-9c558ac702c5" absoluteBounds="4.125, 4.125, 2, 1.7708968098958331">
+      <DataClassMoniker Name="/LTSJT18DataContext/TBL_R_PRODUCT" />
+      <nestedChildShapes>
+        <elementListCompartment Id="1202b144-35c5-4a2f-bc14-f44a65994657" absoluteBounds="4.14, 4.585, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="4d2625b1-1897-43ef-bec8-a8d9a032535d" absoluteBounds="7.125, 3.625, 2, 1.7708968098958331">
+      <DataClassMoniker Name="/LTSJT18DataContext/TBL_R_STOCKPILE" />
+      <nestedChildShapes>
+        <elementListCompartment Id="69c28716-dc0a-43ac-986c-d1ac3ccd8806" absoluteBounds="7.14, 4.085, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="1d47e173-3522-425d-88f5-7a227947c719" absoluteBounds="6.75, 1.25, 2, 1.9631982421875">
+      <DataClassMoniker Name="/LTSJT18DataContext/TBL_R_UNIT" />
+      <nestedChildShapes>
+        <elementListCompartment Id="81a3e93d-729e-4806-b955-ff911be60d27" absoluteBounds="6.765, 1.71, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="a697b897-bb1f-49b1-a8a8-3c1c5da04a25" absoluteBounds="1.625, 5.875, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/LTSJT18DataContext/TBL_T_TARE_UNIT" />
+      <nestedChildShapes>
+        <elementListCompartment Id="76295b2c-1435-46e7-9560-b4678ca4eece" absoluteBounds="1.6400000000000001, 6.335, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="6617d69d-24a1-42df-a68f-c13be5a6905e" absoluteBounds="5.25, 6.75, 2, 3.5016097005208326">
+      <DataClassMoniker Name="/LTSJT18DataContext/TBL_T_TRANSAKSI_18" />
+      <nestedChildShapes>
+        <elementListCompartment Id="b3128742-9848-4198-b8a6-a567def2a3c3" absoluteBounds="5.265, 7.21, 1.9700000000000002, 2.941609700520833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>
