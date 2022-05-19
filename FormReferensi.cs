@@ -761,6 +761,7 @@ namespace WinForms
         private void dgvStockpile_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
             txtCodeStockpile.Text = dgvStockpile.Rows[e.RowIndex].Cells["STOCKPILE_CODE"].Value.ToString();
+            txtNameStockpile.Text = dgvStockpile.Rows[e.RowIndex].Cells["STOCKPILE_NAME"].Value.ToString();
             txtLokasiStockpile.Text = dgvStockpile.Rows[e.RowIndex].Cells["STOCKPILE_LOKASI"].Value.ToString();
             txtDescStockpile.Text = dgvStockpile.Rows[e.RowIndex].Cells["STOCKPILE_DESC"].Value.ToString();
             cbAktifStockpile.Text = dgvStockpile.Rows[e.RowIndex].Cells["STOCKPILE_AKTIF"].Value.ToString();
@@ -787,7 +788,7 @@ namespace WinForms
                     }
                     else
                     {
-                        i_tadap.UpdateStockPile(txtNameStockpile.Text,txtLokasiStockpile.Text, txtDescEntity.Text, txtCodeStockpile.Text);
+                        i_tadap.UpdateStockPile(txtNameStockpile.Text,txtLokasiStockpile.Text, txtDescStockpile.Text, txtCodeStockpile.Text);
 
                         MessageBox.Show("Update data berhasil");
                     }

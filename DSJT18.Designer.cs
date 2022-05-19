@@ -64,6 +64,14 @@ namespace WinForms {
         
         private VW_T_TRANSAKSIDataTable tableVW_T_TRANSAKSI;
         
+        private TBL_R_DOCKETDataTable tableTBL_R_DOCKET;
+        
+        private VW_R_DOCKETDataTable tableVW_R_DOCKET;
+        
+        private TBL_M_CONFIGURATIONDataTable tableTBL_M_CONFIGURATION;
+        
+        private cufn_getslipDataTable tablecufn_getslip;
+        
         private global::System.Data.SchemaSerializationMode _schemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -151,6 +159,18 @@ namespace WinForms {
                 }
                 if ((ds.Tables["VW_T_TRANSAKSI"] != null)) {
                     base.Tables.Add(new VW_T_TRANSAKSIDataTable(ds.Tables["VW_T_TRANSAKSI"]));
+                }
+                if ((ds.Tables["TBL_R_DOCKET"] != null)) {
+                    base.Tables.Add(new TBL_R_DOCKETDataTable(ds.Tables["TBL_R_DOCKET"]));
+                }
+                if ((ds.Tables["VW_R_DOCKET"] != null)) {
+                    base.Tables.Add(new VW_R_DOCKETDataTable(ds.Tables["VW_R_DOCKET"]));
+                }
+                if ((ds.Tables["TBL_M_CONFIGURATION"] != null)) {
+                    base.Tables.Add(new TBL_M_CONFIGURATIONDataTable(ds.Tables["TBL_M_CONFIGURATION"]));
+                }
+                if ((ds.Tables["cufn_getslip"] != null)) {
+                    base.Tables.Add(new cufn_getslipDataTable(ds.Tables["cufn_getslip"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -372,6 +392,46 @@ namespace WinForms {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        [global::System.ComponentModel.Browsable(false)]
+        [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
+        public TBL_R_DOCKETDataTable TBL_R_DOCKET {
+            get {
+                return this.tableTBL_R_DOCKET;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        [global::System.ComponentModel.Browsable(false)]
+        [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
+        public VW_R_DOCKETDataTable VW_R_DOCKET {
+            get {
+                return this.tableVW_R_DOCKET;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        [global::System.ComponentModel.Browsable(false)]
+        [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
+        public TBL_M_CONFIGURATIONDataTable TBL_M_CONFIGURATION {
+            get {
+                return this.tableTBL_M_CONFIGURATION;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        [global::System.ComponentModel.Browsable(false)]
+        [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
+        public cufn_getslipDataTable cufn_getslip {
+            get {
+                return this.tablecufn_getslip;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.BrowsableAttribute(true)]
         [global::System.ComponentModel.DesignerSerializationVisibilityAttribute(global::System.ComponentModel.DesignerSerializationVisibility.Visible)]
         public override global::System.Data.SchemaSerializationMode SchemaSerializationMode {
@@ -496,6 +556,18 @@ namespace WinForms {
                 }
                 if ((ds.Tables["VW_T_TRANSAKSI"] != null)) {
                     base.Tables.Add(new VW_T_TRANSAKSIDataTable(ds.Tables["VW_T_TRANSAKSI"]));
+                }
+                if ((ds.Tables["TBL_R_DOCKET"] != null)) {
+                    base.Tables.Add(new TBL_R_DOCKETDataTable(ds.Tables["TBL_R_DOCKET"]));
+                }
+                if ((ds.Tables["VW_R_DOCKET"] != null)) {
+                    base.Tables.Add(new VW_R_DOCKETDataTable(ds.Tables["VW_R_DOCKET"]));
+                }
+                if ((ds.Tables["TBL_M_CONFIGURATION"] != null)) {
+                    base.Tables.Add(new TBL_M_CONFIGURATIONDataTable(ds.Tables["TBL_M_CONFIGURATION"]));
+                }
+                if ((ds.Tables["cufn_getslip"] != null)) {
+                    base.Tables.Add(new cufn_getslipDataTable(ds.Tables["cufn_getslip"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -650,6 +722,30 @@ namespace WinForms {
                     this.tableVW_T_TRANSAKSI.InitVars();
                 }
             }
+            this.tableTBL_R_DOCKET = ((TBL_R_DOCKETDataTable)(base.Tables["TBL_R_DOCKET"]));
+            if ((initTable == true)) {
+                if ((this.tableTBL_R_DOCKET != null)) {
+                    this.tableTBL_R_DOCKET.InitVars();
+                }
+            }
+            this.tableVW_R_DOCKET = ((VW_R_DOCKETDataTable)(base.Tables["VW_R_DOCKET"]));
+            if ((initTable == true)) {
+                if ((this.tableVW_R_DOCKET != null)) {
+                    this.tableVW_R_DOCKET.InitVars();
+                }
+            }
+            this.tableTBL_M_CONFIGURATION = ((TBL_M_CONFIGURATIONDataTable)(base.Tables["TBL_M_CONFIGURATION"]));
+            if ((initTable == true)) {
+                if ((this.tableTBL_M_CONFIGURATION != null)) {
+                    this.tableTBL_M_CONFIGURATION.InitVars();
+                }
+            }
+            this.tablecufn_getslip = ((cufn_getslipDataTable)(base.Tables["cufn_getslip"]));
+            if ((initTable == true)) {
+                if ((this.tablecufn_getslip != null)) {
+                    this.tablecufn_getslip.InitVars();
+                }
+            }
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -700,6 +796,14 @@ namespace WinForms {
             base.Tables.Add(this.tableTBL_R_STOCKPILE);
             this.tableVW_T_TRANSAKSI = new VW_T_TRANSAKSIDataTable();
             base.Tables.Add(this.tableVW_T_TRANSAKSI);
+            this.tableTBL_R_DOCKET = new TBL_R_DOCKETDataTable();
+            base.Tables.Add(this.tableTBL_R_DOCKET);
+            this.tableVW_R_DOCKET = new VW_R_DOCKETDataTable();
+            base.Tables.Add(this.tableVW_R_DOCKET);
+            this.tableTBL_M_CONFIGURATION = new TBL_M_CONFIGURATIONDataTable();
+            base.Tables.Add(this.tableTBL_M_CONFIGURATION);
+            this.tablecufn_getslip = new cufn_getslipDataTable();
+            base.Tables.Add(this.tablecufn_getslip);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -824,6 +928,30 @@ namespace WinForms {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        private bool ShouldSerializeTBL_R_DOCKET() {
+            return false;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        private bool ShouldSerializeVW_R_DOCKET() {
+            return false;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        private bool ShouldSerializeTBL_M_CONFIGURATION() {
+            return false;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        private bool ShouldSerializecufn_getslip() {
+            return false;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private void SchemaChanged(object sender, global::System.ComponentModel.CollectionChangeEventArgs e) {
             if ((e.Action == global::System.ComponentModel.CollectionChangeAction.Remove)) {
                 this.InitVars();
@@ -936,6 +1064,18 @@ namespace WinForms {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         public delegate void VW_T_TRANSAKSIRowChangeEventHandler(object sender, VW_T_TRANSAKSIRowChangeEvent e);
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        public delegate void TBL_R_DOCKETRowChangeEventHandler(object sender, TBL_R_DOCKETRowChangeEvent e);
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        public delegate void VW_R_DOCKETRowChangeEventHandler(object sender, VW_R_DOCKETRowChangeEvent e);
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        public delegate void TBL_M_CONFIGURATIONRowChangeEventHandler(object sender, TBL_M_CONFIGURATIONRowChangeEvent e);
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        public delegate void cufn_getslipRowChangeEventHandler(object sender, cufn_getslipRowChangeEvent e);
         
         /// <summary>
         ///Represents the strongly named DataTable class.
@@ -7965,6 +8105,1637 @@ namespace WinForms {
         }
         
         /// <summary>
+        ///Represents the strongly named DataTable class.
+        ///</summary>
+        [global::System.Serializable()]
+        [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
+        public partial class TBL_R_DOCKETDataTable : global::System.Data.TypedTableBase<TBL_R_DOCKETRow> {
+            
+            private global::System.Data.DataColumn columnDOCKET_RAW_ID;
+            
+            private global::System.Data.DataColumn columnDOCKET_UNIT_NO;
+            
+            private global::System.Data.DataColumn columnDOCKET_PRODUCT;
+            
+            private global::System.Data.DataColumn columnDOCKET_LOADER;
+            
+            private global::System.Data.DataColumn columnDOCKET_CPP;
+            
+            private global::System.Data.DataColumn columnDOCKET_STOCKPILE;
+            
+            private global::System.Data.DataColumn columnDOCKET_TANGGAL;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public TBL_R_DOCKETDataTable() {
+                this.TableName = "TBL_R_DOCKET";
+                this.BeginInit();
+                this.InitClass();
+                this.EndInit();
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            internal TBL_R_DOCKETDataTable(global::System.Data.DataTable table) {
+                this.TableName = table.TableName;
+                if ((table.CaseSensitive != table.DataSet.CaseSensitive)) {
+                    this.CaseSensitive = table.CaseSensitive;
+                }
+                if ((table.Locale.ToString() != table.DataSet.Locale.ToString())) {
+                    this.Locale = table.Locale;
+                }
+                if ((table.Namespace != table.DataSet.Namespace)) {
+                    this.Namespace = table.Namespace;
+                }
+                this.Prefix = table.Prefix;
+                this.MinimumCapacity = table.MinimumCapacity;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            protected TBL_R_DOCKETDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+                    base(info, context) {
+                this.InitVars();
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn DOCKET_RAW_IDColumn {
+                get {
+                    return this.columnDOCKET_RAW_ID;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn DOCKET_UNIT_NOColumn {
+                get {
+                    return this.columnDOCKET_UNIT_NO;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn DOCKET_PRODUCTColumn {
+                get {
+                    return this.columnDOCKET_PRODUCT;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn DOCKET_LOADERColumn {
+                get {
+                    return this.columnDOCKET_LOADER;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn DOCKET_CPPColumn {
+                get {
+                    return this.columnDOCKET_CPP;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn DOCKET_STOCKPILEColumn {
+                get {
+                    return this.columnDOCKET_STOCKPILE;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn DOCKET_TANGGALColumn {
+                get {
+                    return this.columnDOCKET_TANGGAL;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            [global::System.ComponentModel.Browsable(false)]
+            public int Count {
+                get {
+                    return this.Rows.Count;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public TBL_R_DOCKETRow this[int index] {
+                get {
+                    return ((TBL_R_DOCKETRow)(this.Rows[index]));
+                }
+            }
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public event TBL_R_DOCKETRowChangeEventHandler TBL_R_DOCKETRowChanging;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public event TBL_R_DOCKETRowChangeEventHandler TBL_R_DOCKETRowChanged;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public event TBL_R_DOCKETRowChangeEventHandler TBL_R_DOCKETRowDeleting;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public event TBL_R_DOCKETRowChangeEventHandler TBL_R_DOCKETRowDeleted;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void AddTBL_R_DOCKETRow(TBL_R_DOCKETRow row) {
+                this.Rows.Add(row);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public TBL_R_DOCKETRow AddTBL_R_DOCKETRow(string DOCKET_RAW_ID, string DOCKET_UNIT_NO, string DOCKET_PRODUCT, string DOCKET_LOADER, string DOCKET_CPP, string DOCKET_STOCKPILE, System.DateTime DOCKET_TANGGAL) {
+                TBL_R_DOCKETRow rowTBL_R_DOCKETRow = ((TBL_R_DOCKETRow)(this.NewRow()));
+                object[] columnValuesArray = new object[] {
+                        DOCKET_RAW_ID,
+                        DOCKET_UNIT_NO,
+                        DOCKET_PRODUCT,
+                        DOCKET_LOADER,
+                        DOCKET_CPP,
+                        DOCKET_STOCKPILE,
+                        DOCKET_TANGGAL};
+                rowTBL_R_DOCKETRow.ItemArray = columnValuesArray;
+                this.Rows.Add(rowTBL_R_DOCKETRow);
+                return rowTBL_R_DOCKETRow;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public override global::System.Data.DataTable Clone() {
+                TBL_R_DOCKETDataTable cln = ((TBL_R_DOCKETDataTable)(base.Clone()));
+                cln.InitVars();
+                return cln;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            protected override global::System.Data.DataTable CreateInstance() {
+                return new TBL_R_DOCKETDataTable();
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            internal void InitVars() {
+                this.columnDOCKET_RAW_ID = base.Columns["DOCKET_RAW_ID"];
+                this.columnDOCKET_UNIT_NO = base.Columns["DOCKET_UNIT_NO"];
+                this.columnDOCKET_PRODUCT = base.Columns["DOCKET_PRODUCT"];
+                this.columnDOCKET_LOADER = base.Columns["DOCKET_LOADER"];
+                this.columnDOCKET_CPP = base.Columns["DOCKET_CPP"];
+                this.columnDOCKET_STOCKPILE = base.Columns["DOCKET_STOCKPILE"];
+                this.columnDOCKET_TANGGAL = base.Columns["DOCKET_TANGGAL"];
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            private void InitClass() {
+                this.columnDOCKET_RAW_ID = new global::System.Data.DataColumn("DOCKET_RAW_ID", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnDOCKET_RAW_ID);
+                this.columnDOCKET_UNIT_NO = new global::System.Data.DataColumn("DOCKET_UNIT_NO", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnDOCKET_UNIT_NO);
+                this.columnDOCKET_PRODUCT = new global::System.Data.DataColumn("DOCKET_PRODUCT", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnDOCKET_PRODUCT);
+                this.columnDOCKET_LOADER = new global::System.Data.DataColumn("DOCKET_LOADER", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnDOCKET_LOADER);
+                this.columnDOCKET_CPP = new global::System.Data.DataColumn("DOCKET_CPP", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnDOCKET_CPP);
+                this.columnDOCKET_STOCKPILE = new global::System.Data.DataColumn("DOCKET_STOCKPILE", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnDOCKET_STOCKPILE);
+                this.columnDOCKET_TANGGAL = new global::System.Data.DataColumn("DOCKET_TANGGAL", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnDOCKET_TANGGAL);
+                this.columnDOCKET_RAW_ID.MaxLength = 200;
+                this.columnDOCKET_UNIT_NO.MaxLength = 10;
+                this.columnDOCKET_PRODUCT.MaxLength = 10;
+                this.columnDOCKET_LOADER.MaxLength = 10;
+                this.columnDOCKET_CPP.MaxLength = 10;
+                this.columnDOCKET_STOCKPILE.MaxLength = 10;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public TBL_R_DOCKETRow NewTBL_R_DOCKETRow() {
+                return ((TBL_R_DOCKETRow)(this.NewRow()));
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
+                return new TBL_R_DOCKETRow(builder);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            protected override global::System.Type GetRowType() {
+                return typeof(TBL_R_DOCKETRow);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowChanged(e);
+                if ((this.TBL_R_DOCKETRowChanged != null)) {
+                    this.TBL_R_DOCKETRowChanged(this, new TBL_R_DOCKETRowChangeEvent(((TBL_R_DOCKETRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowChanging(e);
+                if ((this.TBL_R_DOCKETRowChanging != null)) {
+                    this.TBL_R_DOCKETRowChanging(this, new TBL_R_DOCKETRowChangeEvent(((TBL_R_DOCKETRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowDeleted(e);
+                if ((this.TBL_R_DOCKETRowDeleted != null)) {
+                    this.TBL_R_DOCKETRowDeleted(this, new TBL_R_DOCKETRowChangeEvent(((TBL_R_DOCKETRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowDeleting(e);
+                if ((this.TBL_R_DOCKETRowDeleting != null)) {
+                    this.TBL_R_DOCKETRowDeleting(this, new TBL_R_DOCKETRowChangeEvent(((TBL_R_DOCKETRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void RemoveTBL_R_DOCKETRow(TBL_R_DOCKETRow row) {
+                this.Rows.Remove(row);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
+                global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
+                global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
+                DSJT18 ds = new DSJT18();
+                global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
+                any1.Namespace = "http://www.w3.org/2001/XMLSchema";
+                any1.MinOccurs = new decimal(0);
+                any1.MaxOccurs = decimal.MaxValue;
+                any1.ProcessContents = global::System.Xml.Schema.XmlSchemaContentProcessing.Lax;
+                sequence.Items.Add(any1);
+                global::System.Xml.Schema.XmlSchemaAny any2 = new global::System.Xml.Schema.XmlSchemaAny();
+                any2.Namespace = "urn:schemas-microsoft-com:xml-diffgram-v1";
+                any2.MinOccurs = new decimal(1);
+                any2.ProcessContents = global::System.Xml.Schema.XmlSchemaContentProcessing.Lax;
+                sequence.Items.Add(any2);
+                global::System.Xml.Schema.XmlSchemaAttribute attribute1 = new global::System.Xml.Schema.XmlSchemaAttribute();
+                attribute1.Name = "namespace";
+                attribute1.FixedValue = ds.Namespace;
+                type.Attributes.Add(attribute1);
+                global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
+                attribute2.Name = "tableTypeName";
+                attribute2.FixedValue = "TBL_R_DOCKETDataTable";
+                type.Attributes.Add(attribute2);
+                type.Particle = sequence;
+                global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
+                if (xs.Contains(dsSchema.TargetNamespace)) {
+                    global::System.IO.MemoryStream s1 = new global::System.IO.MemoryStream();
+                    global::System.IO.MemoryStream s2 = new global::System.IO.MemoryStream();
+                    try {
+                        global::System.Xml.Schema.XmlSchema schema = null;
+                        dsSchema.Write(s1);
+                        for (global::System.Collections.IEnumerator schemas = xs.Schemas(dsSchema.TargetNamespace).GetEnumerator(); schemas.MoveNext(); ) {
+                            schema = ((global::System.Xml.Schema.XmlSchema)(schemas.Current));
+                            s2.SetLength(0);
+                            schema.Write(s2);
+                            if ((s1.Length == s2.Length)) {
+                                s1.Position = 0;
+                                s2.Position = 0;
+                                for (; ((s1.Position != s1.Length) 
+                                            && (s1.ReadByte() == s2.ReadByte())); ) {
+                                    ;
+                                }
+                                if ((s1.Position == s1.Length)) {
+                                    return type;
+                                }
+                            }
+                        }
+                    }
+                    finally {
+                        if ((s1 != null)) {
+                            s1.Close();
+                        }
+                        if ((s2 != null)) {
+                            s2.Close();
+                        }
+                    }
+                }
+                xs.Add(dsSchema);
+                return type;
+            }
+        }
+        
+        /// <summary>
+        ///Represents the strongly named DataTable class.
+        ///</summary>
+        [global::System.Serializable()]
+        [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
+        public partial class VW_R_DOCKETDataTable : global::System.Data.TypedTableBase<VW_R_DOCKETRow> {
+            
+            private global::System.Data.DataColumn columnDOCKET_RAW_ID;
+            
+            private global::System.Data.DataColumn columnDOCKET_UNIT_NO;
+            
+            private global::System.Data.DataColumn columnDOCKET_PRODUCT;
+            
+            private global::System.Data.DataColumn columnDOCKET_LOADER;
+            
+            private global::System.Data.DataColumn columnDOCKET_CPP;
+            
+            private global::System.Data.DataColumn columnDOCKET_STOCKPILE;
+            
+            private global::System.Data.DataColumn columnDOCKET_TANGGAL;
+            
+            private global::System.Data.DataColumn columnUNIT_ENTITY;
+            
+            private global::System.Data.DataColumn columnENTITY_NAME;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public VW_R_DOCKETDataTable() {
+                this.TableName = "VW_R_DOCKET";
+                this.BeginInit();
+                this.InitClass();
+                this.EndInit();
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            internal VW_R_DOCKETDataTable(global::System.Data.DataTable table) {
+                this.TableName = table.TableName;
+                if ((table.CaseSensitive != table.DataSet.CaseSensitive)) {
+                    this.CaseSensitive = table.CaseSensitive;
+                }
+                if ((table.Locale.ToString() != table.DataSet.Locale.ToString())) {
+                    this.Locale = table.Locale;
+                }
+                if ((table.Namespace != table.DataSet.Namespace)) {
+                    this.Namespace = table.Namespace;
+                }
+                this.Prefix = table.Prefix;
+                this.MinimumCapacity = table.MinimumCapacity;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            protected VW_R_DOCKETDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+                    base(info, context) {
+                this.InitVars();
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn DOCKET_RAW_IDColumn {
+                get {
+                    return this.columnDOCKET_RAW_ID;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn DOCKET_UNIT_NOColumn {
+                get {
+                    return this.columnDOCKET_UNIT_NO;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn DOCKET_PRODUCTColumn {
+                get {
+                    return this.columnDOCKET_PRODUCT;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn DOCKET_LOADERColumn {
+                get {
+                    return this.columnDOCKET_LOADER;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn DOCKET_CPPColumn {
+                get {
+                    return this.columnDOCKET_CPP;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn DOCKET_STOCKPILEColumn {
+                get {
+                    return this.columnDOCKET_STOCKPILE;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn DOCKET_TANGGALColumn {
+                get {
+                    return this.columnDOCKET_TANGGAL;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn UNIT_ENTITYColumn {
+                get {
+                    return this.columnUNIT_ENTITY;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn ENTITY_NAMEColumn {
+                get {
+                    return this.columnENTITY_NAME;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            [global::System.ComponentModel.Browsable(false)]
+            public int Count {
+                get {
+                    return this.Rows.Count;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public VW_R_DOCKETRow this[int index] {
+                get {
+                    return ((VW_R_DOCKETRow)(this.Rows[index]));
+                }
+            }
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public event VW_R_DOCKETRowChangeEventHandler VW_R_DOCKETRowChanging;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public event VW_R_DOCKETRowChangeEventHandler VW_R_DOCKETRowChanged;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public event VW_R_DOCKETRowChangeEventHandler VW_R_DOCKETRowDeleting;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public event VW_R_DOCKETRowChangeEventHandler VW_R_DOCKETRowDeleted;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void AddVW_R_DOCKETRow(VW_R_DOCKETRow row) {
+                this.Rows.Add(row);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public VW_R_DOCKETRow AddVW_R_DOCKETRow(string DOCKET_RAW_ID, string DOCKET_UNIT_NO, string DOCKET_PRODUCT, string DOCKET_LOADER, string DOCKET_CPP, string DOCKET_STOCKPILE, System.DateTime DOCKET_TANGGAL, string UNIT_ENTITY, string ENTITY_NAME) {
+                VW_R_DOCKETRow rowVW_R_DOCKETRow = ((VW_R_DOCKETRow)(this.NewRow()));
+                object[] columnValuesArray = new object[] {
+                        DOCKET_RAW_ID,
+                        DOCKET_UNIT_NO,
+                        DOCKET_PRODUCT,
+                        DOCKET_LOADER,
+                        DOCKET_CPP,
+                        DOCKET_STOCKPILE,
+                        DOCKET_TANGGAL,
+                        UNIT_ENTITY,
+                        ENTITY_NAME};
+                rowVW_R_DOCKETRow.ItemArray = columnValuesArray;
+                this.Rows.Add(rowVW_R_DOCKETRow);
+                return rowVW_R_DOCKETRow;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public override global::System.Data.DataTable Clone() {
+                VW_R_DOCKETDataTable cln = ((VW_R_DOCKETDataTable)(base.Clone()));
+                cln.InitVars();
+                return cln;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            protected override global::System.Data.DataTable CreateInstance() {
+                return new VW_R_DOCKETDataTable();
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            internal void InitVars() {
+                this.columnDOCKET_RAW_ID = base.Columns["DOCKET_RAW_ID"];
+                this.columnDOCKET_UNIT_NO = base.Columns["DOCKET_UNIT_NO"];
+                this.columnDOCKET_PRODUCT = base.Columns["DOCKET_PRODUCT"];
+                this.columnDOCKET_LOADER = base.Columns["DOCKET_LOADER"];
+                this.columnDOCKET_CPP = base.Columns["DOCKET_CPP"];
+                this.columnDOCKET_STOCKPILE = base.Columns["DOCKET_STOCKPILE"];
+                this.columnDOCKET_TANGGAL = base.Columns["DOCKET_TANGGAL"];
+                this.columnUNIT_ENTITY = base.Columns["UNIT_ENTITY"];
+                this.columnENTITY_NAME = base.Columns["ENTITY_NAME"];
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            private void InitClass() {
+                this.columnDOCKET_RAW_ID = new global::System.Data.DataColumn("DOCKET_RAW_ID", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnDOCKET_RAW_ID);
+                this.columnDOCKET_UNIT_NO = new global::System.Data.DataColumn("DOCKET_UNIT_NO", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnDOCKET_UNIT_NO);
+                this.columnDOCKET_PRODUCT = new global::System.Data.DataColumn("DOCKET_PRODUCT", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnDOCKET_PRODUCT);
+                this.columnDOCKET_LOADER = new global::System.Data.DataColumn("DOCKET_LOADER", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnDOCKET_LOADER);
+                this.columnDOCKET_CPP = new global::System.Data.DataColumn("DOCKET_CPP", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnDOCKET_CPP);
+                this.columnDOCKET_STOCKPILE = new global::System.Data.DataColumn("DOCKET_STOCKPILE", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnDOCKET_STOCKPILE);
+                this.columnDOCKET_TANGGAL = new global::System.Data.DataColumn("DOCKET_TANGGAL", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnDOCKET_TANGGAL);
+                this.columnUNIT_ENTITY = new global::System.Data.DataColumn("UNIT_ENTITY", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnUNIT_ENTITY);
+                this.columnENTITY_NAME = new global::System.Data.DataColumn("ENTITY_NAME", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnENTITY_NAME);
+                this.columnDOCKET_RAW_ID.MaxLength = 200;
+                this.columnDOCKET_UNIT_NO.MaxLength = 10;
+                this.columnDOCKET_PRODUCT.MaxLength = 10;
+                this.columnDOCKET_LOADER.MaxLength = 10;
+                this.columnDOCKET_CPP.MaxLength = 10;
+                this.columnDOCKET_STOCKPILE.MaxLength = 10;
+                this.columnUNIT_ENTITY.MaxLength = 5;
+                this.columnENTITY_NAME.MaxLength = 200;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public VW_R_DOCKETRow NewVW_R_DOCKETRow() {
+                return ((VW_R_DOCKETRow)(this.NewRow()));
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
+                return new VW_R_DOCKETRow(builder);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            protected override global::System.Type GetRowType() {
+                return typeof(VW_R_DOCKETRow);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowChanged(e);
+                if ((this.VW_R_DOCKETRowChanged != null)) {
+                    this.VW_R_DOCKETRowChanged(this, new VW_R_DOCKETRowChangeEvent(((VW_R_DOCKETRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowChanging(e);
+                if ((this.VW_R_DOCKETRowChanging != null)) {
+                    this.VW_R_DOCKETRowChanging(this, new VW_R_DOCKETRowChangeEvent(((VW_R_DOCKETRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowDeleted(e);
+                if ((this.VW_R_DOCKETRowDeleted != null)) {
+                    this.VW_R_DOCKETRowDeleted(this, new VW_R_DOCKETRowChangeEvent(((VW_R_DOCKETRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowDeleting(e);
+                if ((this.VW_R_DOCKETRowDeleting != null)) {
+                    this.VW_R_DOCKETRowDeleting(this, new VW_R_DOCKETRowChangeEvent(((VW_R_DOCKETRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void RemoveVW_R_DOCKETRow(VW_R_DOCKETRow row) {
+                this.Rows.Remove(row);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
+                global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
+                global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
+                DSJT18 ds = new DSJT18();
+                global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
+                any1.Namespace = "http://www.w3.org/2001/XMLSchema";
+                any1.MinOccurs = new decimal(0);
+                any1.MaxOccurs = decimal.MaxValue;
+                any1.ProcessContents = global::System.Xml.Schema.XmlSchemaContentProcessing.Lax;
+                sequence.Items.Add(any1);
+                global::System.Xml.Schema.XmlSchemaAny any2 = new global::System.Xml.Schema.XmlSchemaAny();
+                any2.Namespace = "urn:schemas-microsoft-com:xml-diffgram-v1";
+                any2.MinOccurs = new decimal(1);
+                any2.ProcessContents = global::System.Xml.Schema.XmlSchemaContentProcessing.Lax;
+                sequence.Items.Add(any2);
+                global::System.Xml.Schema.XmlSchemaAttribute attribute1 = new global::System.Xml.Schema.XmlSchemaAttribute();
+                attribute1.Name = "namespace";
+                attribute1.FixedValue = ds.Namespace;
+                type.Attributes.Add(attribute1);
+                global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
+                attribute2.Name = "tableTypeName";
+                attribute2.FixedValue = "VW_R_DOCKETDataTable";
+                type.Attributes.Add(attribute2);
+                type.Particle = sequence;
+                global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
+                if (xs.Contains(dsSchema.TargetNamespace)) {
+                    global::System.IO.MemoryStream s1 = new global::System.IO.MemoryStream();
+                    global::System.IO.MemoryStream s2 = new global::System.IO.MemoryStream();
+                    try {
+                        global::System.Xml.Schema.XmlSchema schema = null;
+                        dsSchema.Write(s1);
+                        for (global::System.Collections.IEnumerator schemas = xs.Schemas(dsSchema.TargetNamespace).GetEnumerator(); schemas.MoveNext(); ) {
+                            schema = ((global::System.Xml.Schema.XmlSchema)(schemas.Current));
+                            s2.SetLength(0);
+                            schema.Write(s2);
+                            if ((s1.Length == s2.Length)) {
+                                s1.Position = 0;
+                                s2.Position = 0;
+                                for (; ((s1.Position != s1.Length) 
+                                            && (s1.ReadByte() == s2.ReadByte())); ) {
+                                    ;
+                                }
+                                if ((s1.Position == s1.Length)) {
+                                    return type;
+                                }
+                            }
+                        }
+                    }
+                    finally {
+                        if ((s1 != null)) {
+                            s1.Close();
+                        }
+                        if ((s2 != null)) {
+                            s2.Close();
+                        }
+                    }
+                }
+                xs.Add(dsSchema);
+                return type;
+            }
+        }
+        
+        /// <summary>
+        ///Represents the strongly named DataTable class.
+        ///</summary>
+        [global::System.Serializable()]
+        [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
+        public partial class TBL_M_CONFIGURATIONDataTable : global::System.Data.TypedTableBase<TBL_M_CONFIGURATIONRow> {
+            
+            private global::System.Data.DataColumn columnCONF_COMPANY;
+            
+            private global::System.Data.DataColumn columnCONF_SITE;
+            
+            private global::System.Data.DataColumn columnCONF_TIMBANGAN;
+            
+            private global::System.Data.DataColumn columnCONF_LOKASI_KAB;
+            
+            private global::System.Data.DataColumn columnCONF_LOKASI_PROV;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public TBL_M_CONFIGURATIONDataTable() {
+                this.TableName = "TBL_M_CONFIGURATION";
+                this.BeginInit();
+                this.InitClass();
+                this.EndInit();
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            internal TBL_M_CONFIGURATIONDataTable(global::System.Data.DataTable table) {
+                this.TableName = table.TableName;
+                if ((table.CaseSensitive != table.DataSet.CaseSensitive)) {
+                    this.CaseSensitive = table.CaseSensitive;
+                }
+                if ((table.Locale.ToString() != table.DataSet.Locale.ToString())) {
+                    this.Locale = table.Locale;
+                }
+                if ((table.Namespace != table.DataSet.Namespace)) {
+                    this.Namespace = table.Namespace;
+                }
+                this.Prefix = table.Prefix;
+                this.MinimumCapacity = table.MinimumCapacity;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            protected TBL_M_CONFIGURATIONDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+                    base(info, context) {
+                this.InitVars();
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn CONF_COMPANYColumn {
+                get {
+                    return this.columnCONF_COMPANY;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn CONF_SITEColumn {
+                get {
+                    return this.columnCONF_SITE;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn CONF_TIMBANGANColumn {
+                get {
+                    return this.columnCONF_TIMBANGAN;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn CONF_LOKASI_KABColumn {
+                get {
+                    return this.columnCONF_LOKASI_KAB;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn CONF_LOKASI_PROVColumn {
+                get {
+                    return this.columnCONF_LOKASI_PROV;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            [global::System.ComponentModel.Browsable(false)]
+            public int Count {
+                get {
+                    return this.Rows.Count;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public TBL_M_CONFIGURATIONRow this[int index] {
+                get {
+                    return ((TBL_M_CONFIGURATIONRow)(this.Rows[index]));
+                }
+            }
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public event TBL_M_CONFIGURATIONRowChangeEventHandler TBL_M_CONFIGURATIONRowChanging;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public event TBL_M_CONFIGURATIONRowChangeEventHandler TBL_M_CONFIGURATIONRowChanged;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public event TBL_M_CONFIGURATIONRowChangeEventHandler TBL_M_CONFIGURATIONRowDeleting;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public event TBL_M_CONFIGURATIONRowChangeEventHandler TBL_M_CONFIGURATIONRowDeleted;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void AddTBL_M_CONFIGURATIONRow(TBL_M_CONFIGURATIONRow row) {
+                this.Rows.Add(row);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public TBL_M_CONFIGURATIONRow AddTBL_M_CONFIGURATIONRow(string CONF_COMPANY, string CONF_SITE, string CONF_TIMBANGAN, string CONF_LOKASI_KAB, string CONF_LOKASI_PROV) {
+                TBL_M_CONFIGURATIONRow rowTBL_M_CONFIGURATIONRow = ((TBL_M_CONFIGURATIONRow)(this.NewRow()));
+                object[] columnValuesArray = new object[] {
+                        CONF_COMPANY,
+                        CONF_SITE,
+                        CONF_TIMBANGAN,
+                        CONF_LOKASI_KAB,
+                        CONF_LOKASI_PROV};
+                rowTBL_M_CONFIGURATIONRow.ItemArray = columnValuesArray;
+                this.Rows.Add(rowTBL_M_CONFIGURATIONRow);
+                return rowTBL_M_CONFIGURATIONRow;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public override global::System.Data.DataTable Clone() {
+                TBL_M_CONFIGURATIONDataTable cln = ((TBL_M_CONFIGURATIONDataTable)(base.Clone()));
+                cln.InitVars();
+                return cln;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            protected override global::System.Data.DataTable CreateInstance() {
+                return new TBL_M_CONFIGURATIONDataTable();
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            internal void InitVars() {
+                this.columnCONF_COMPANY = base.Columns["CONF_COMPANY"];
+                this.columnCONF_SITE = base.Columns["CONF_SITE"];
+                this.columnCONF_TIMBANGAN = base.Columns["CONF_TIMBANGAN"];
+                this.columnCONF_LOKASI_KAB = base.Columns["CONF_LOKASI_KAB"];
+                this.columnCONF_LOKASI_PROV = base.Columns["CONF_LOKASI_PROV"];
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            private void InitClass() {
+                this.columnCONF_COMPANY = new global::System.Data.DataColumn("CONF_COMPANY", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnCONF_COMPANY);
+                this.columnCONF_SITE = new global::System.Data.DataColumn("CONF_SITE", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnCONF_SITE);
+                this.columnCONF_TIMBANGAN = new global::System.Data.DataColumn("CONF_TIMBANGAN", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnCONF_TIMBANGAN);
+                this.columnCONF_LOKASI_KAB = new global::System.Data.DataColumn("CONF_LOKASI_KAB", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnCONF_LOKASI_KAB);
+                this.columnCONF_LOKASI_PROV = new global::System.Data.DataColumn("CONF_LOKASI_PROV", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnCONF_LOKASI_PROV);
+                this.columnCONF_COMPANY.MaxLength = 200;
+                this.columnCONF_SITE.MaxLength = 200;
+                this.columnCONF_TIMBANGAN.MaxLength = 200;
+                this.columnCONF_LOKASI_KAB.MaxLength = 200;
+                this.columnCONF_LOKASI_PROV.MaxLength = 200;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public TBL_M_CONFIGURATIONRow NewTBL_M_CONFIGURATIONRow() {
+                return ((TBL_M_CONFIGURATIONRow)(this.NewRow()));
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
+                return new TBL_M_CONFIGURATIONRow(builder);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            protected override global::System.Type GetRowType() {
+                return typeof(TBL_M_CONFIGURATIONRow);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowChanged(e);
+                if ((this.TBL_M_CONFIGURATIONRowChanged != null)) {
+                    this.TBL_M_CONFIGURATIONRowChanged(this, new TBL_M_CONFIGURATIONRowChangeEvent(((TBL_M_CONFIGURATIONRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowChanging(e);
+                if ((this.TBL_M_CONFIGURATIONRowChanging != null)) {
+                    this.TBL_M_CONFIGURATIONRowChanging(this, new TBL_M_CONFIGURATIONRowChangeEvent(((TBL_M_CONFIGURATIONRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowDeleted(e);
+                if ((this.TBL_M_CONFIGURATIONRowDeleted != null)) {
+                    this.TBL_M_CONFIGURATIONRowDeleted(this, new TBL_M_CONFIGURATIONRowChangeEvent(((TBL_M_CONFIGURATIONRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowDeleting(e);
+                if ((this.TBL_M_CONFIGURATIONRowDeleting != null)) {
+                    this.TBL_M_CONFIGURATIONRowDeleting(this, new TBL_M_CONFIGURATIONRowChangeEvent(((TBL_M_CONFIGURATIONRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void RemoveTBL_M_CONFIGURATIONRow(TBL_M_CONFIGURATIONRow row) {
+                this.Rows.Remove(row);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
+                global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
+                global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
+                DSJT18 ds = new DSJT18();
+                global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
+                any1.Namespace = "http://www.w3.org/2001/XMLSchema";
+                any1.MinOccurs = new decimal(0);
+                any1.MaxOccurs = decimal.MaxValue;
+                any1.ProcessContents = global::System.Xml.Schema.XmlSchemaContentProcessing.Lax;
+                sequence.Items.Add(any1);
+                global::System.Xml.Schema.XmlSchemaAny any2 = new global::System.Xml.Schema.XmlSchemaAny();
+                any2.Namespace = "urn:schemas-microsoft-com:xml-diffgram-v1";
+                any2.MinOccurs = new decimal(1);
+                any2.ProcessContents = global::System.Xml.Schema.XmlSchemaContentProcessing.Lax;
+                sequence.Items.Add(any2);
+                global::System.Xml.Schema.XmlSchemaAttribute attribute1 = new global::System.Xml.Schema.XmlSchemaAttribute();
+                attribute1.Name = "namespace";
+                attribute1.FixedValue = ds.Namespace;
+                type.Attributes.Add(attribute1);
+                global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
+                attribute2.Name = "tableTypeName";
+                attribute2.FixedValue = "TBL_M_CONFIGURATIONDataTable";
+                type.Attributes.Add(attribute2);
+                type.Particle = sequence;
+                global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
+                if (xs.Contains(dsSchema.TargetNamespace)) {
+                    global::System.IO.MemoryStream s1 = new global::System.IO.MemoryStream();
+                    global::System.IO.MemoryStream s2 = new global::System.IO.MemoryStream();
+                    try {
+                        global::System.Xml.Schema.XmlSchema schema = null;
+                        dsSchema.Write(s1);
+                        for (global::System.Collections.IEnumerator schemas = xs.Schemas(dsSchema.TargetNamespace).GetEnumerator(); schemas.MoveNext(); ) {
+                            schema = ((global::System.Xml.Schema.XmlSchema)(schemas.Current));
+                            s2.SetLength(0);
+                            schema.Write(s2);
+                            if ((s1.Length == s2.Length)) {
+                                s1.Position = 0;
+                                s2.Position = 0;
+                                for (; ((s1.Position != s1.Length) 
+                                            && (s1.ReadByte() == s2.ReadByte())); ) {
+                                    ;
+                                }
+                                if ((s1.Position == s1.Length)) {
+                                    return type;
+                                }
+                            }
+                        }
+                    }
+                    finally {
+                        if ((s1 != null)) {
+                            s1.Close();
+                        }
+                        if ((s2 != null)) {
+                            s2.Close();
+                        }
+                    }
+                }
+                xs.Add(dsSchema);
+                return type;
+            }
+        }
+        
+        /// <summary>
+        ///Represents the strongly named DataTable class.
+        ///</summary>
+        [global::System.Serializable()]
+        [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
+        public partial class cufn_getslipDataTable : global::System.Data.TypedTableBase<cufn_getslipRow> {
+            
+            private global::System.Data.DataColumn columnTRANS_RAW_ID;
+            
+            private global::System.Data.DataColumn columnTRANS_TGL_PRODUKSI;
+            
+            private global::System.Data.DataColumn columnTRANS_UNIT;
+            
+            private global::System.Data.DataColumn columnUNIT_ENTITY;
+            
+            private global::System.Data.DataColumn columnUNIT_KONTRAKTOR;
+            
+            private global::System.Data.DataColumn columnTRANS_ENTITY;
+            
+            private global::System.Data.DataColumn columnENTITY_NAME;
+            
+            private global::System.Data.DataColumn columnTRANS_CPP;
+            
+            private global::System.Data.DataColumn columnCPP_LOKASI;
+            
+            private global::System.Data.DataColumn columnTRANS_PRODUCT;
+            
+            private global::System.Data.DataColumn columnPRODUCT_NAME;
+            
+            private global::System.Data.DataColumn columnTRANS_LOADER;
+            
+            private global::System.Data.DataColumn columnTRANS_GROSS;
+            
+            private global::System.Data.DataColumn columnTRANS_TARE;
+            
+            private global::System.Data.DataColumn columnTRANS_NETTO;
+            
+            private global::System.Data.DataColumn columnTRANS_STOCKPILE;
+            
+            private global::System.Data.DataColumn columnSTOCKPILE_NAME;
+            
+            private global::System.Data.DataColumn columnSTOCKPILE_LOKASI;
+            
+            private global::System.Data.DataColumn columnTRANS_START_TIMBANG;
+            
+            private global::System.Data.DataColumn columnTRANS_DATETIME;
+            
+            private global::System.Data.DataColumn columnTRANS_UPDATE_AT;
+            
+            private global::System.Data.DataColumn columnTRANS_OPERATOR;
+            
+            private global::System.Data.DataColumn columnTRANS_DOCKET_ID;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public cufn_getslipDataTable() {
+                this.TableName = "cufn_getslip";
+                this.BeginInit();
+                this.InitClass();
+                this.EndInit();
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            internal cufn_getslipDataTable(global::System.Data.DataTable table) {
+                this.TableName = table.TableName;
+                if ((table.CaseSensitive != table.DataSet.CaseSensitive)) {
+                    this.CaseSensitive = table.CaseSensitive;
+                }
+                if ((table.Locale.ToString() != table.DataSet.Locale.ToString())) {
+                    this.Locale = table.Locale;
+                }
+                if ((table.Namespace != table.DataSet.Namespace)) {
+                    this.Namespace = table.Namespace;
+                }
+                this.Prefix = table.Prefix;
+                this.MinimumCapacity = table.MinimumCapacity;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            protected cufn_getslipDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+                    base(info, context) {
+                this.InitVars();
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn TRANS_RAW_IDColumn {
+                get {
+                    return this.columnTRANS_RAW_ID;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn TRANS_TGL_PRODUKSIColumn {
+                get {
+                    return this.columnTRANS_TGL_PRODUKSI;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn TRANS_UNITColumn {
+                get {
+                    return this.columnTRANS_UNIT;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn UNIT_ENTITYColumn {
+                get {
+                    return this.columnUNIT_ENTITY;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn UNIT_KONTRAKTORColumn {
+                get {
+                    return this.columnUNIT_KONTRAKTOR;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn TRANS_ENTITYColumn {
+                get {
+                    return this.columnTRANS_ENTITY;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn ENTITY_NAMEColumn {
+                get {
+                    return this.columnENTITY_NAME;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn TRANS_CPPColumn {
+                get {
+                    return this.columnTRANS_CPP;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn CPP_LOKASIColumn {
+                get {
+                    return this.columnCPP_LOKASI;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn TRANS_PRODUCTColumn {
+                get {
+                    return this.columnTRANS_PRODUCT;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn PRODUCT_NAMEColumn {
+                get {
+                    return this.columnPRODUCT_NAME;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn TRANS_LOADERColumn {
+                get {
+                    return this.columnTRANS_LOADER;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn TRANS_GROSSColumn {
+                get {
+                    return this.columnTRANS_GROSS;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn TRANS_TAREColumn {
+                get {
+                    return this.columnTRANS_TARE;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn TRANS_NETTOColumn {
+                get {
+                    return this.columnTRANS_NETTO;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn TRANS_STOCKPILEColumn {
+                get {
+                    return this.columnTRANS_STOCKPILE;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn STOCKPILE_NAMEColumn {
+                get {
+                    return this.columnSTOCKPILE_NAME;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn STOCKPILE_LOKASIColumn {
+                get {
+                    return this.columnSTOCKPILE_LOKASI;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn TRANS_START_TIMBANGColumn {
+                get {
+                    return this.columnTRANS_START_TIMBANG;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn TRANS_DATETIMEColumn {
+                get {
+                    return this.columnTRANS_DATETIME;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn TRANS_UPDATE_ATColumn {
+                get {
+                    return this.columnTRANS_UPDATE_AT;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn TRANS_OPERATORColumn {
+                get {
+                    return this.columnTRANS_OPERATOR;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn TRANS_DOCKET_IDColumn {
+                get {
+                    return this.columnTRANS_DOCKET_ID;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            [global::System.ComponentModel.Browsable(false)]
+            public int Count {
+                get {
+                    return this.Rows.Count;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public cufn_getslipRow this[int index] {
+                get {
+                    return ((cufn_getslipRow)(this.Rows[index]));
+                }
+            }
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public event cufn_getslipRowChangeEventHandler cufn_getslipRowChanging;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public event cufn_getslipRowChangeEventHandler cufn_getslipRowChanged;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public event cufn_getslipRowChangeEventHandler cufn_getslipRowDeleting;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public event cufn_getslipRowChangeEventHandler cufn_getslipRowDeleted;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void Addcufn_getslipRow(cufn_getslipRow row) {
+                this.Rows.Add(row);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public cufn_getslipRow Addcufn_getslipRow(
+                        string TRANS_RAW_ID, 
+                        string TRANS_TGL_PRODUKSI, 
+                        string TRANS_UNIT, 
+                        string UNIT_ENTITY, 
+                        string UNIT_KONTRAKTOR, 
+                        string TRANS_ENTITY, 
+                        string ENTITY_NAME, 
+                        string TRANS_CPP, 
+                        string CPP_LOKASI, 
+                        string TRANS_PRODUCT, 
+                        string PRODUCT_NAME, 
+                        string TRANS_LOADER, 
+                        int TRANS_GROSS, 
+                        int TRANS_TARE, 
+                        int TRANS_NETTO, 
+                        string TRANS_STOCKPILE, 
+                        string STOCKPILE_NAME, 
+                        string STOCKPILE_LOKASI, 
+                        System.DateTime TRANS_START_TIMBANG, 
+                        System.DateTime TRANS_DATETIME, 
+                        System.DateTime TRANS_UPDATE_AT, 
+                        string TRANS_OPERATOR, 
+                        string TRANS_DOCKET_ID) {
+                cufn_getslipRow rowcufn_getslipRow = ((cufn_getslipRow)(this.NewRow()));
+                object[] columnValuesArray = new object[] {
+                        TRANS_RAW_ID,
+                        TRANS_TGL_PRODUKSI,
+                        TRANS_UNIT,
+                        UNIT_ENTITY,
+                        UNIT_KONTRAKTOR,
+                        TRANS_ENTITY,
+                        ENTITY_NAME,
+                        TRANS_CPP,
+                        CPP_LOKASI,
+                        TRANS_PRODUCT,
+                        PRODUCT_NAME,
+                        TRANS_LOADER,
+                        TRANS_GROSS,
+                        TRANS_TARE,
+                        TRANS_NETTO,
+                        TRANS_STOCKPILE,
+                        STOCKPILE_NAME,
+                        STOCKPILE_LOKASI,
+                        TRANS_START_TIMBANG,
+                        TRANS_DATETIME,
+                        TRANS_UPDATE_AT,
+                        TRANS_OPERATOR,
+                        TRANS_DOCKET_ID};
+                rowcufn_getslipRow.ItemArray = columnValuesArray;
+                this.Rows.Add(rowcufn_getslipRow);
+                return rowcufn_getslipRow;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public cufn_getslipRow FindByTRANS_RAW_ID(string TRANS_RAW_ID) {
+                return ((cufn_getslipRow)(this.Rows.Find(new object[] {
+                            TRANS_RAW_ID})));
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public override global::System.Data.DataTable Clone() {
+                cufn_getslipDataTable cln = ((cufn_getslipDataTable)(base.Clone()));
+                cln.InitVars();
+                return cln;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            protected override global::System.Data.DataTable CreateInstance() {
+                return new cufn_getslipDataTable();
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            internal void InitVars() {
+                this.columnTRANS_RAW_ID = base.Columns["TRANS_RAW_ID"];
+                this.columnTRANS_TGL_PRODUKSI = base.Columns["TRANS_TGL_PRODUKSI"];
+                this.columnTRANS_UNIT = base.Columns["TRANS_UNIT"];
+                this.columnUNIT_ENTITY = base.Columns["UNIT_ENTITY"];
+                this.columnUNIT_KONTRAKTOR = base.Columns["UNIT_KONTRAKTOR"];
+                this.columnTRANS_ENTITY = base.Columns["TRANS_ENTITY"];
+                this.columnENTITY_NAME = base.Columns["ENTITY_NAME"];
+                this.columnTRANS_CPP = base.Columns["TRANS_CPP"];
+                this.columnCPP_LOKASI = base.Columns["CPP_LOKASI"];
+                this.columnTRANS_PRODUCT = base.Columns["TRANS_PRODUCT"];
+                this.columnPRODUCT_NAME = base.Columns["PRODUCT_NAME"];
+                this.columnTRANS_LOADER = base.Columns["TRANS_LOADER"];
+                this.columnTRANS_GROSS = base.Columns["TRANS_GROSS"];
+                this.columnTRANS_TARE = base.Columns["TRANS_TARE"];
+                this.columnTRANS_NETTO = base.Columns["TRANS_NETTO"];
+                this.columnTRANS_STOCKPILE = base.Columns["TRANS_STOCKPILE"];
+                this.columnSTOCKPILE_NAME = base.Columns["STOCKPILE_NAME"];
+                this.columnSTOCKPILE_LOKASI = base.Columns["STOCKPILE_LOKASI"];
+                this.columnTRANS_START_TIMBANG = base.Columns["TRANS_START_TIMBANG"];
+                this.columnTRANS_DATETIME = base.Columns["TRANS_DATETIME"];
+                this.columnTRANS_UPDATE_AT = base.Columns["TRANS_UPDATE_AT"];
+                this.columnTRANS_OPERATOR = base.Columns["TRANS_OPERATOR"];
+                this.columnTRANS_DOCKET_ID = base.Columns["TRANS_DOCKET_ID"];
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            private void InitClass() {
+                this.columnTRANS_RAW_ID = new global::System.Data.DataColumn("TRANS_RAW_ID", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnTRANS_RAW_ID);
+                this.columnTRANS_TGL_PRODUKSI = new global::System.Data.DataColumn("TRANS_TGL_PRODUKSI", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnTRANS_TGL_PRODUKSI);
+                this.columnTRANS_UNIT = new global::System.Data.DataColumn("TRANS_UNIT", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnTRANS_UNIT);
+                this.columnUNIT_ENTITY = new global::System.Data.DataColumn("UNIT_ENTITY", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnUNIT_ENTITY);
+                this.columnUNIT_KONTRAKTOR = new global::System.Data.DataColumn("UNIT_KONTRAKTOR", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnUNIT_KONTRAKTOR);
+                this.columnTRANS_ENTITY = new global::System.Data.DataColumn("TRANS_ENTITY", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnTRANS_ENTITY);
+                this.columnENTITY_NAME = new global::System.Data.DataColumn("ENTITY_NAME", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnENTITY_NAME);
+                this.columnTRANS_CPP = new global::System.Data.DataColumn("TRANS_CPP", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnTRANS_CPP);
+                this.columnCPP_LOKASI = new global::System.Data.DataColumn("CPP_LOKASI", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnCPP_LOKASI);
+                this.columnTRANS_PRODUCT = new global::System.Data.DataColumn("TRANS_PRODUCT", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnTRANS_PRODUCT);
+                this.columnPRODUCT_NAME = new global::System.Data.DataColumn("PRODUCT_NAME", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnPRODUCT_NAME);
+                this.columnTRANS_LOADER = new global::System.Data.DataColumn("TRANS_LOADER", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnTRANS_LOADER);
+                this.columnTRANS_GROSS = new global::System.Data.DataColumn("TRANS_GROSS", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnTRANS_GROSS);
+                this.columnTRANS_TARE = new global::System.Data.DataColumn("TRANS_TARE", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnTRANS_TARE);
+                this.columnTRANS_NETTO = new global::System.Data.DataColumn("TRANS_NETTO", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnTRANS_NETTO);
+                this.columnTRANS_STOCKPILE = new global::System.Data.DataColumn("TRANS_STOCKPILE", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnTRANS_STOCKPILE);
+                this.columnSTOCKPILE_NAME = new global::System.Data.DataColumn("STOCKPILE_NAME", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnSTOCKPILE_NAME);
+                this.columnSTOCKPILE_LOKASI = new global::System.Data.DataColumn("STOCKPILE_LOKASI", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnSTOCKPILE_LOKASI);
+                this.columnTRANS_START_TIMBANG = new global::System.Data.DataColumn("TRANS_START_TIMBANG", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnTRANS_START_TIMBANG);
+                this.columnTRANS_DATETIME = new global::System.Data.DataColumn("TRANS_DATETIME", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnTRANS_DATETIME);
+                this.columnTRANS_UPDATE_AT = new global::System.Data.DataColumn("TRANS_UPDATE_AT", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnTRANS_UPDATE_AT);
+                this.columnTRANS_OPERATOR = new global::System.Data.DataColumn("TRANS_OPERATOR", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnTRANS_OPERATOR);
+                this.columnTRANS_DOCKET_ID = new global::System.Data.DataColumn("TRANS_DOCKET_ID", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnTRANS_DOCKET_ID);
+                this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
+                                this.columnTRANS_RAW_ID}, true));
+                this.columnTRANS_RAW_ID.AllowDBNull = false;
+                this.columnTRANS_RAW_ID.Unique = true;
+                this.columnTRANS_RAW_ID.MaxLength = 200;
+                this.columnTRANS_TGL_PRODUKSI.ReadOnly = true;
+                this.columnTRANS_TGL_PRODUKSI.MaxLength = 30;
+                this.columnTRANS_UNIT.AllowDBNull = false;
+                this.columnTRANS_UNIT.MaxLength = 10;
+                this.columnUNIT_ENTITY.MaxLength = 5;
+                this.columnUNIT_KONTRAKTOR.MaxLength = 10;
+                this.columnTRANS_ENTITY.AllowDBNull = false;
+                this.columnTRANS_ENTITY.MaxLength = 5;
+                this.columnENTITY_NAME.MaxLength = 200;
+                this.columnTRANS_CPP.AllowDBNull = false;
+                this.columnTRANS_CPP.MaxLength = 10;
+                this.columnCPP_LOKASI.MaxLength = 100;
+                this.columnTRANS_PRODUCT.AllowDBNull = false;
+                this.columnTRANS_PRODUCT.MaxLength = 10;
+                this.columnPRODUCT_NAME.MaxLength = 200;
+                this.columnTRANS_LOADER.MaxLength = 10;
+                this.columnTRANS_GROSS.AllowDBNull = false;
+                this.columnTRANS_TARE.AllowDBNull = false;
+                this.columnTRANS_NETTO.ReadOnly = true;
+                this.columnTRANS_STOCKPILE.AllowDBNull = false;
+                this.columnTRANS_STOCKPILE.MaxLength = 10;
+                this.columnSTOCKPILE_NAME.MaxLength = 30;
+                this.columnSTOCKPILE_LOKASI.MaxLength = 100;
+                this.columnTRANS_START_TIMBANG.AllowDBNull = false;
+                this.columnTRANS_DATETIME.AllowDBNull = false;
+                this.columnTRANS_UPDATE_AT.AllowDBNull = false;
+                this.columnTRANS_OPERATOR.AllowDBNull = false;
+                this.columnTRANS_OPERATOR.MaxLength = 20;
+                this.columnTRANS_DOCKET_ID.MaxLength = 200;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public cufn_getslipRow Newcufn_getslipRow() {
+                return ((cufn_getslipRow)(this.NewRow()));
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
+                return new cufn_getslipRow(builder);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            protected override global::System.Type GetRowType() {
+                return typeof(cufn_getslipRow);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowChanged(e);
+                if ((this.cufn_getslipRowChanged != null)) {
+                    this.cufn_getslipRowChanged(this, new cufn_getslipRowChangeEvent(((cufn_getslipRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowChanging(e);
+                if ((this.cufn_getslipRowChanging != null)) {
+                    this.cufn_getslipRowChanging(this, new cufn_getslipRowChangeEvent(((cufn_getslipRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowDeleted(e);
+                if ((this.cufn_getslipRowDeleted != null)) {
+                    this.cufn_getslipRowDeleted(this, new cufn_getslipRowChangeEvent(((cufn_getslipRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowDeleting(e);
+                if ((this.cufn_getslipRowDeleting != null)) {
+                    this.cufn_getslipRowDeleting(this, new cufn_getslipRowChangeEvent(((cufn_getslipRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void Removecufn_getslipRow(cufn_getslipRow row) {
+                this.Rows.Remove(row);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
+                global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
+                global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
+                DSJT18 ds = new DSJT18();
+                global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
+                any1.Namespace = "http://www.w3.org/2001/XMLSchema";
+                any1.MinOccurs = new decimal(0);
+                any1.MaxOccurs = decimal.MaxValue;
+                any1.ProcessContents = global::System.Xml.Schema.XmlSchemaContentProcessing.Lax;
+                sequence.Items.Add(any1);
+                global::System.Xml.Schema.XmlSchemaAny any2 = new global::System.Xml.Schema.XmlSchemaAny();
+                any2.Namespace = "urn:schemas-microsoft-com:xml-diffgram-v1";
+                any2.MinOccurs = new decimal(1);
+                any2.ProcessContents = global::System.Xml.Schema.XmlSchemaContentProcessing.Lax;
+                sequence.Items.Add(any2);
+                global::System.Xml.Schema.XmlSchemaAttribute attribute1 = new global::System.Xml.Schema.XmlSchemaAttribute();
+                attribute1.Name = "namespace";
+                attribute1.FixedValue = ds.Namespace;
+                type.Attributes.Add(attribute1);
+                global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
+                attribute2.Name = "tableTypeName";
+                attribute2.FixedValue = "cufn_getslipDataTable";
+                type.Attributes.Add(attribute2);
+                type.Particle = sequence;
+                global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
+                if (xs.Contains(dsSchema.TargetNamespace)) {
+                    global::System.IO.MemoryStream s1 = new global::System.IO.MemoryStream();
+                    global::System.IO.MemoryStream s2 = new global::System.IO.MemoryStream();
+                    try {
+                        global::System.Xml.Schema.XmlSchema schema = null;
+                        dsSchema.Write(s1);
+                        for (global::System.Collections.IEnumerator schemas = xs.Schemas(dsSchema.TargetNamespace).GetEnumerator(); schemas.MoveNext(); ) {
+                            schema = ((global::System.Xml.Schema.XmlSchema)(schemas.Current));
+                            s2.SetLength(0);
+                            schema.Write(s2);
+                            if ((s1.Length == s2.Length)) {
+                                s1.Position = 0;
+                                s2.Position = 0;
+                                for (; ((s1.Position != s1.Length) 
+                                            && (s1.ReadByte() == s2.ReadByte())); ) {
+                                    ;
+                                }
+                                if ((s1.Position == s1.Length)) {
+                                    return type;
+                                }
+                            }
+                        }
+                    }
+                    finally {
+                        if ((s1 != null)) {
+                            s1.Close();
+                        }
+                        if ((s2 != null)) {
+                            s2.Close();
+                        }
+                    }
+                }
+                xs.Add(dsSchema);
+                return type;
+            }
+        }
+        
+        /// <summary>
         ///Represents strongly named DataRow class.
         ///</summary>
         public partial class TBL_M_AKSESRow : global::System.Data.DataRow {
@@ -10544,6 +12315,1095 @@ namespace WinForms {
         }
         
         /// <summary>
+        ///Represents strongly named DataRow class.
+        ///</summary>
+        public partial class TBL_R_DOCKETRow : global::System.Data.DataRow {
+            
+            private TBL_R_DOCKETDataTable tableTBL_R_DOCKET;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            internal TBL_R_DOCKETRow(global::System.Data.DataRowBuilder rb) : 
+                    base(rb) {
+                this.tableTBL_R_DOCKET = ((TBL_R_DOCKETDataTable)(this.Table));
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string DOCKET_RAW_ID {
+                get {
+                    try {
+                        return ((string)(this[this.tableTBL_R_DOCKET.DOCKET_RAW_IDColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'DOCKET_RAW_ID\' in table \'TBL_R_DOCKET\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableTBL_R_DOCKET.DOCKET_RAW_IDColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string DOCKET_UNIT_NO {
+                get {
+                    try {
+                        return ((string)(this[this.tableTBL_R_DOCKET.DOCKET_UNIT_NOColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'DOCKET_UNIT_NO\' in table \'TBL_R_DOCKET\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableTBL_R_DOCKET.DOCKET_UNIT_NOColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string DOCKET_PRODUCT {
+                get {
+                    try {
+                        return ((string)(this[this.tableTBL_R_DOCKET.DOCKET_PRODUCTColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'DOCKET_PRODUCT\' in table \'TBL_R_DOCKET\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableTBL_R_DOCKET.DOCKET_PRODUCTColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string DOCKET_LOADER {
+                get {
+                    try {
+                        return ((string)(this[this.tableTBL_R_DOCKET.DOCKET_LOADERColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'DOCKET_LOADER\' in table \'TBL_R_DOCKET\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableTBL_R_DOCKET.DOCKET_LOADERColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string DOCKET_CPP {
+                get {
+                    try {
+                        return ((string)(this[this.tableTBL_R_DOCKET.DOCKET_CPPColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'DOCKET_CPP\' in table \'TBL_R_DOCKET\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableTBL_R_DOCKET.DOCKET_CPPColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string DOCKET_STOCKPILE {
+                get {
+                    try {
+                        return ((string)(this[this.tableTBL_R_DOCKET.DOCKET_STOCKPILEColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'DOCKET_STOCKPILE\' in table \'TBL_R_DOCKET\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableTBL_R_DOCKET.DOCKET_STOCKPILEColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public System.DateTime DOCKET_TANGGAL {
+                get {
+                    try {
+                        return ((global::System.DateTime)(this[this.tableTBL_R_DOCKET.DOCKET_TANGGALColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'DOCKET_TANGGAL\' in table \'TBL_R_DOCKET\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableTBL_R_DOCKET.DOCKET_TANGGALColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsDOCKET_RAW_IDNull() {
+                return this.IsNull(this.tableTBL_R_DOCKET.DOCKET_RAW_IDColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetDOCKET_RAW_IDNull() {
+                this[this.tableTBL_R_DOCKET.DOCKET_RAW_IDColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsDOCKET_UNIT_NONull() {
+                return this.IsNull(this.tableTBL_R_DOCKET.DOCKET_UNIT_NOColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetDOCKET_UNIT_NONull() {
+                this[this.tableTBL_R_DOCKET.DOCKET_UNIT_NOColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsDOCKET_PRODUCTNull() {
+                return this.IsNull(this.tableTBL_R_DOCKET.DOCKET_PRODUCTColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetDOCKET_PRODUCTNull() {
+                this[this.tableTBL_R_DOCKET.DOCKET_PRODUCTColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsDOCKET_LOADERNull() {
+                return this.IsNull(this.tableTBL_R_DOCKET.DOCKET_LOADERColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetDOCKET_LOADERNull() {
+                this[this.tableTBL_R_DOCKET.DOCKET_LOADERColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsDOCKET_CPPNull() {
+                return this.IsNull(this.tableTBL_R_DOCKET.DOCKET_CPPColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetDOCKET_CPPNull() {
+                this[this.tableTBL_R_DOCKET.DOCKET_CPPColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsDOCKET_STOCKPILENull() {
+                return this.IsNull(this.tableTBL_R_DOCKET.DOCKET_STOCKPILEColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetDOCKET_STOCKPILENull() {
+                this[this.tableTBL_R_DOCKET.DOCKET_STOCKPILEColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsDOCKET_TANGGALNull() {
+                return this.IsNull(this.tableTBL_R_DOCKET.DOCKET_TANGGALColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetDOCKET_TANGGALNull() {
+                this[this.tableTBL_R_DOCKET.DOCKET_TANGGALColumn] = global::System.Convert.DBNull;
+            }
+        }
+        
+        /// <summary>
+        ///Represents strongly named DataRow class.
+        ///</summary>
+        public partial class VW_R_DOCKETRow : global::System.Data.DataRow {
+            
+            private VW_R_DOCKETDataTable tableVW_R_DOCKET;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            internal VW_R_DOCKETRow(global::System.Data.DataRowBuilder rb) : 
+                    base(rb) {
+                this.tableVW_R_DOCKET = ((VW_R_DOCKETDataTable)(this.Table));
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string DOCKET_RAW_ID {
+                get {
+                    try {
+                        return ((string)(this[this.tableVW_R_DOCKET.DOCKET_RAW_IDColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'DOCKET_RAW_ID\' in table \'VW_R_DOCKET\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableVW_R_DOCKET.DOCKET_RAW_IDColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string DOCKET_UNIT_NO {
+                get {
+                    try {
+                        return ((string)(this[this.tableVW_R_DOCKET.DOCKET_UNIT_NOColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'DOCKET_UNIT_NO\' in table \'VW_R_DOCKET\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableVW_R_DOCKET.DOCKET_UNIT_NOColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string DOCKET_PRODUCT {
+                get {
+                    try {
+                        return ((string)(this[this.tableVW_R_DOCKET.DOCKET_PRODUCTColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'DOCKET_PRODUCT\' in table \'VW_R_DOCKET\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableVW_R_DOCKET.DOCKET_PRODUCTColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string DOCKET_LOADER {
+                get {
+                    try {
+                        return ((string)(this[this.tableVW_R_DOCKET.DOCKET_LOADERColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'DOCKET_LOADER\' in table \'VW_R_DOCKET\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableVW_R_DOCKET.DOCKET_LOADERColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string DOCKET_CPP {
+                get {
+                    try {
+                        return ((string)(this[this.tableVW_R_DOCKET.DOCKET_CPPColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'DOCKET_CPP\' in table \'VW_R_DOCKET\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableVW_R_DOCKET.DOCKET_CPPColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string DOCKET_STOCKPILE {
+                get {
+                    try {
+                        return ((string)(this[this.tableVW_R_DOCKET.DOCKET_STOCKPILEColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'DOCKET_STOCKPILE\' in table \'VW_R_DOCKET\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableVW_R_DOCKET.DOCKET_STOCKPILEColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public System.DateTime DOCKET_TANGGAL {
+                get {
+                    try {
+                        return ((global::System.DateTime)(this[this.tableVW_R_DOCKET.DOCKET_TANGGALColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'DOCKET_TANGGAL\' in table \'VW_R_DOCKET\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableVW_R_DOCKET.DOCKET_TANGGALColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string UNIT_ENTITY {
+                get {
+                    try {
+                        return ((string)(this[this.tableVW_R_DOCKET.UNIT_ENTITYColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'UNIT_ENTITY\' in table \'VW_R_DOCKET\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableVW_R_DOCKET.UNIT_ENTITYColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string ENTITY_NAME {
+                get {
+                    try {
+                        return ((string)(this[this.tableVW_R_DOCKET.ENTITY_NAMEColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'ENTITY_NAME\' in table \'VW_R_DOCKET\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableVW_R_DOCKET.ENTITY_NAMEColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsDOCKET_RAW_IDNull() {
+                return this.IsNull(this.tableVW_R_DOCKET.DOCKET_RAW_IDColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetDOCKET_RAW_IDNull() {
+                this[this.tableVW_R_DOCKET.DOCKET_RAW_IDColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsDOCKET_UNIT_NONull() {
+                return this.IsNull(this.tableVW_R_DOCKET.DOCKET_UNIT_NOColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetDOCKET_UNIT_NONull() {
+                this[this.tableVW_R_DOCKET.DOCKET_UNIT_NOColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsDOCKET_PRODUCTNull() {
+                return this.IsNull(this.tableVW_R_DOCKET.DOCKET_PRODUCTColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetDOCKET_PRODUCTNull() {
+                this[this.tableVW_R_DOCKET.DOCKET_PRODUCTColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsDOCKET_LOADERNull() {
+                return this.IsNull(this.tableVW_R_DOCKET.DOCKET_LOADERColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetDOCKET_LOADERNull() {
+                this[this.tableVW_R_DOCKET.DOCKET_LOADERColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsDOCKET_CPPNull() {
+                return this.IsNull(this.tableVW_R_DOCKET.DOCKET_CPPColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetDOCKET_CPPNull() {
+                this[this.tableVW_R_DOCKET.DOCKET_CPPColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsDOCKET_STOCKPILENull() {
+                return this.IsNull(this.tableVW_R_DOCKET.DOCKET_STOCKPILEColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetDOCKET_STOCKPILENull() {
+                this[this.tableVW_R_DOCKET.DOCKET_STOCKPILEColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsDOCKET_TANGGALNull() {
+                return this.IsNull(this.tableVW_R_DOCKET.DOCKET_TANGGALColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetDOCKET_TANGGALNull() {
+                this[this.tableVW_R_DOCKET.DOCKET_TANGGALColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsUNIT_ENTITYNull() {
+                return this.IsNull(this.tableVW_R_DOCKET.UNIT_ENTITYColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetUNIT_ENTITYNull() {
+                this[this.tableVW_R_DOCKET.UNIT_ENTITYColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsENTITY_NAMENull() {
+                return this.IsNull(this.tableVW_R_DOCKET.ENTITY_NAMEColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetENTITY_NAMENull() {
+                this[this.tableVW_R_DOCKET.ENTITY_NAMEColumn] = global::System.Convert.DBNull;
+            }
+        }
+        
+        /// <summary>
+        ///Represents strongly named DataRow class.
+        ///</summary>
+        public partial class TBL_M_CONFIGURATIONRow : global::System.Data.DataRow {
+            
+            private TBL_M_CONFIGURATIONDataTable tableTBL_M_CONFIGURATION;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            internal TBL_M_CONFIGURATIONRow(global::System.Data.DataRowBuilder rb) : 
+                    base(rb) {
+                this.tableTBL_M_CONFIGURATION = ((TBL_M_CONFIGURATIONDataTable)(this.Table));
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string CONF_COMPANY {
+                get {
+                    try {
+                        return ((string)(this[this.tableTBL_M_CONFIGURATION.CONF_COMPANYColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'CONF_COMPANY\' in table \'TBL_M_CONFIGURATION\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableTBL_M_CONFIGURATION.CONF_COMPANYColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string CONF_SITE {
+                get {
+                    try {
+                        return ((string)(this[this.tableTBL_M_CONFIGURATION.CONF_SITEColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'CONF_SITE\' in table \'TBL_M_CONFIGURATION\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableTBL_M_CONFIGURATION.CONF_SITEColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string CONF_TIMBANGAN {
+                get {
+                    try {
+                        return ((string)(this[this.tableTBL_M_CONFIGURATION.CONF_TIMBANGANColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'CONF_TIMBANGAN\' in table \'TBL_M_CONFIGURATION\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableTBL_M_CONFIGURATION.CONF_TIMBANGANColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string CONF_LOKASI_KAB {
+                get {
+                    try {
+                        return ((string)(this[this.tableTBL_M_CONFIGURATION.CONF_LOKASI_KABColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'CONF_LOKASI_KAB\' in table \'TBL_M_CONFIGURATION\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableTBL_M_CONFIGURATION.CONF_LOKASI_KABColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string CONF_LOKASI_PROV {
+                get {
+                    try {
+                        return ((string)(this[this.tableTBL_M_CONFIGURATION.CONF_LOKASI_PROVColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'CONF_LOKASI_PROV\' in table \'TBL_M_CONFIGURATION\' is DBNull." +
+                                "", e);
+                    }
+                }
+                set {
+                    this[this.tableTBL_M_CONFIGURATION.CONF_LOKASI_PROVColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsCONF_COMPANYNull() {
+                return this.IsNull(this.tableTBL_M_CONFIGURATION.CONF_COMPANYColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetCONF_COMPANYNull() {
+                this[this.tableTBL_M_CONFIGURATION.CONF_COMPANYColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsCONF_SITENull() {
+                return this.IsNull(this.tableTBL_M_CONFIGURATION.CONF_SITEColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetCONF_SITENull() {
+                this[this.tableTBL_M_CONFIGURATION.CONF_SITEColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsCONF_TIMBANGANNull() {
+                return this.IsNull(this.tableTBL_M_CONFIGURATION.CONF_TIMBANGANColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetCONF_TIMBANGANNull() {
+                this[this.tableTBL_M_CONFIGURATION.CONF_TIMBANGANColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsCONF_LOKASI_KABNull() {
+                return this.IsNull(this.tableTBL_M_CONFIGURATION.CONF_LOKASI_KABColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetCONF_LOKASI_KABNull() {
+                this[this.tableTBL_M_CONFIGURATION.CONF_LOKASI_KABColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsCONF_LOKASI_PROVNull() {
+                return this.IsNull(this.tableTBL_M_CONFIGURATION.CONF_LOKASI_PROVColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetCONF_LOKASI_PROVNull() {
+                this[this.tableTBL_M_CONFIGURATION.CONF_LOKASI_PROVColumn] = global::System.Convert.DBNull;
+            }
+        }
+        
+        /// <summary>
+        ///Represents strongly named DataRow class.
+        ///</summary>
+        public partial class cufn_getslipRow : global::System.Data.DataRow {
+            
+            private cufn_getslipDataTable tablecufn_getslip;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            internal cufn_getslipRow(global::System.Data.DataRowBuilder rb) : 
+                    base(rb) {
+                this.tablecufn_getslip = ((cufn_getslipDataTable)(this.Table));
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string TRANS_RAW_ID {
+                get {
+                    return ((string)(this[this.tablecufn_getslip.TRANS_RAW_IDColumn]));
+                }
+                set {
+                    this[this.tablecufn_getslip.TRANS_RAW_IDColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string TRANS_TGL_PRODUKSI {
+                get {
+                    try {
+                        return ((string)(this[this.tablecufn_getslip.TRANS_TGL_PRODUKSIColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'TRANS_TGL_PRODUKSI\' in table \'cufn_getslip\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablecufn_getslip.TRANS_TGL_PRODUKSIColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string TRANS_UNIT {
+                get {
+                    return ((string)(this[this.tablecufn_getslip.TRANS_UNITColumn]));
+                }
+                set {
+                    this[this.tablecufn_getslip.TRANS_UNITColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string UNIT_ENTITY {
+                get {
+                    try {
+                        return ((string)(this[this.tablecufn_getslip.UNIT_ENTITYColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'UNIT_ENTITY\' in table \'cufn_getslip\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablecufn_getslip.UNIT_ENTITYColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string UNIT_KONTRAKTOR {
+                get {
+                    try {
+                        return ((string)(this[this.tablecufn_getslip.UNIT_KONTRAKTORColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'UNIT_KONTRAKTOR\' in table \'cufn_getslip\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablecufn_getslip.UNIT_KONTRAKTORColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string TRANS_ENTITY {
+                get {
+                    return ((string)(this[this.tablecufn_getslip.TRANS_ENTITYColumn]));
+                }
+                set {
+                    this[this.tablecufn_getslip.TRANS_ENTITYColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string ENTITY_NAME {
+                get {
+                    try {
+                        return ((string)(this[this.tablecufn_getslip.ENTITY_NAMEColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'ENTITY_NAME\' in table \'cufn_getslip\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablecufn_getslip.ENTITY_NAMEColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string TRANS_CPP {
+                get {
+                    return ((string)(this[this.tablecufn_getslip.TRANS_CPPColumn]));
+                }
+                set {
+                    this[this.tablecufn_getslip.TRANS_CPPColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string CPP_LOKASI {
+                get {
+                    try {
+                        return ((string)(this[this.tablecufn_getslip.CPP_LOKASIColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'CPP_LOKASI\' in table \'cufn_getslip\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablecufn_getslip.CPP_LOKASIColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string TRANS_PRODUCT {
+                get {
+                    return ((string)(this[this.tablecufn_getslip.TRANS_PRODUCTColumn]));
+                }
+                set {
+                    this[this.tablecufn_getslip.TRANS_PRODUCTColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string PRODUCT_NAME {
+                get {
+                    try {
+                        return ((string)(this[this.tablecufn_getslip.PRODUCT_NAMEColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'PRODUCT_NAME\' in table \'cufn_getslip\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablecufn_getslip.PRODUCT_NAMEColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string TRANS_LOADER {
+                get {
+                    try {
+                        return ((string)(this[this.tablecufn_getslip.TRANS_LOADERColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'TRANS_LOADER\' in table \'cufn_getslip\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablecufn_getslip.TRANS_LOADERColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public int TRANS_GROSS {
+                get {
+                    return ((int)(this[this.tablecufn_getslip.TRANS_GROSSColumn]));
+                }
+                set {
+                    this[this.tablecufn_getslip.TRANS_GROSSColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public int TRANS_TARE {
+                get {
+                    return ((int)(this[this.tablecufn_getslip.TRANS_TAREColumn]));
+                }
+                set {
+                    this[this.tablecufn_getslip.TRANS_TAREColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public int TRANS_NETTO {
+                get {
+                    try {
+                        return ((int)(this[this.tablecufn_getslip.TRANS_NETTOColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'TRANS_NETTO\' in table \'cufn_getslip\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablecufn_getslip.TRANS_NETTOColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string TRANS_STOCKPILE {
+                get {
+                    return ((string)(this[this.tablecufn_getslip.TRANS_STOCKPILEColumn]));
+                }
+                set {
+                    this[this.tablecufn_getslip.TRANS_STOCKPILEColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string STOCKPILE_NAME {
+                get {
+                    try {
+                        return ((string)(this[this.tablecufn_getslip.STOCKPILE_NAMEColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'STOCKPILE_NAME\' in table \'cufn_getslip\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablecufn_getslip.STOCKPILE_NAMEColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string STOCKPILE_LOKASI {
+                get {
+                    try {
+                        return ((string)(this[this.tablecufn_getslip.STOCKPILE_LOKASIColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'STOCKPILE_LOKASI\' in table \'cufn_getslip\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablecufn_getslip.STOCKPILE_LOKASIColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public System.DateTime TRANS_START_TIMBANG {
+                get {
+                    return ((global::System.DateTime)(this[this.tablecufn_getslip.TRANS_START_TIMBANGColumn]));
+                }
+                set {
+                    this[this.tablecufn_getslip.TRANS_START_TIMBANGColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public System.DateTime TRANS_DATETIME {
+                get {
+                    return ((global::System.DateTime)(this[this.tablecufn_getslip.TRANS_DATETIMEColumn]));
+                }
+                set {
+                    this[this.tablecufn_getslip.TRANS_DATETIMEColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public System.DateTime TRANS_UPDATE_AT {
+                get {
+                    return ((global::System.DateTime)(this[this.tablecufn_getslip.TRANS_UPDATE_ATColumn]));
+                }
+                set {
+                    this[this.tablecufn_getslip.TRANS_UPDATE_ATColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string TRANS_OPERATOR {
+                get {
+                    return ((string)(this[this.tablecufn_getslip.TRANS_OPERATORColumn]));
+                }
+                set {
+                    this[this.tablecufn_getslip.TRANS_OPERATORColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string TRANS_DOCKET_ID {
+                get {
+                    try {
+                        return ((string)(this[this.tablecufn_getslip.TRANS_DOCKET_IDColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'TRANS_DOCKET_ID\' in table \'cufn_getslip\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablecufn_getslip.TRANS_DOCKET_IDColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsTRANS_TGL_PRODUKSINull() {
+                return this.IsNull(this.tablecufn_getslip.TRANS_TGL_PRODUKSIColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetTRANS_TGL_PRODUKSINull() {
+                this[this.tablecufn_getslip.TRANS_TGL_PRODUKSIColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsUNIT_ENTITYNull() {
+                return this.IsNull(this.tablecufn_getslip.UNIT_ENTITYColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetUNIT_ENTITYNull() {
+                this[this.tablecufn_getslip.UNIT_ENTITYColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsUNIT_KONTRAKTORNull() {
+                return this.IsNull(this.tablecufn_getslip.UNIT_KONTRAKTORColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetUNIT_KONTRAKTORNull() {
+                this[this.tablecufn_getslip.UNIT_KONTRAKTORColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsENTITY_NAMENull() {
+                return this.IsNull(this.tablecufn_getslip.ENTITY_NAMEColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetENTITY_NAMENull() {
+                this[this.tablecufn_getslip.ENTITY_NAMEColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsCPP_LOKASINull() {
+                return this.IsNull(this.tablecufn_getslip.CPP_LOKASIColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetCPP_LOKASINull() {
+                this[this.tablecufn_getslip.CPP_LOKASIColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsPRODUCT_NAMENull() {
+                return this.IsNull(this.tablecufn_getslip.PRODUCT_NAMEColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetPRODUCT_NAMENull() {
+                this[this.tablecufn_getslip.PRODUCT_NAMEColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsTRANS_LOADERNull() {
+                return this.IsNull(this.tablecufn_getslip.TRANS_LOADERColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetTRANS_LOADERNull() {
+                this[this.tablecufn_getslip.TRANS_LOADERColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsTRANS_NETTONull() {
+                return this.IsNull(this.tablecufn_getslip.TRANS_NETTOColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetTRANS_NETTONull() {
+                this[this.tablecufn_getslip.TRANS_NETTOColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsSTOCKPILE_NAMENull() {
+                return this.IsNull(this.tablecufn_getslip.STOCKPILE_NAMEColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetSTOCKPILE_NAMENull() {
+                this[this.tablecufn_getslip.STOCKPILE_NAMEColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsSTOCKPILE_LOKASINull() {
+                return this.IsNull(this.tablecufn_getslip.STOCKPILE_LOKASIColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetSTOCKPILE_LOKASINull() {
+                this[this.tablecufn_getslip.STOCKPILE_LOKASIColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsTRANS_DOCKET_IDNull() {
+                return this.IsNull(this.tablecufn_getslip.TRANS_DOCKET_IDColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetTRANS_DOCKET_IDNull() {
+                this[this.tablecufn_getslip.TRANS_DOCKET_IDColumn] = global::System.Convert.DBNull;
+            }
+        }
+        
+        /// <summary>
         ///Row event argument class
         ///</summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
@@ -11209,6 +14069,142 @@ namespace WinForms {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public VW_T_TRANSAKSIRow Row {
+                get {
+                    return this.eventRow;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataRowAction Action {
+                get {
+                    return this.eventAction;
+                }
+            }
+        }
+        
+        /// <summary>
+        ///Row event argument class
+        ///</summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        public class TBL_R_DOCKETRowChangeEvent : global::System.EventArgs {
+            
+            private TBL_R_DOCKETRow eventRow;
+            
+            private global::System.Data.DataRowAction eventAction;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public TBL_R_DOCKETRowChangeEvent(TBL_R_DOCKETRow row, global::System.Data.DataRowAction action) {
+                this.eventRow = row;
+                this.eventAction = action;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public TBL_R_DOCKETRow Row {
+                get {
+                    return this.eventRow;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataRowAction Action {
+                get {
+                    return this.eventAction;
+                }
+            }
+        }
+        
+        /// <summary>
+        ///Row event argument class
+        ///</summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        public class VW_R_DOCKETRowChangeEvent : global::System.EventArgs {
+            
+            private VW_R_DOCKETRow eventRow;
+            
+            private global::System.Data.DataRowAction eventAction;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public VW_R_DOCKETRowChangeEvent(VW_R_DOCKETRow row, global::System.Data.DataRowAction action) {
+                this.eventRow = row;
+                this.eventAction = action;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public VW_R_DOCKETRow Row {
+                get {
+                    return this.eventRow;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataRowAction Action {
+                get {
+                    return this.eventAction;
+                }
+            }
+        }
+        
+        /// <summary>
+        ///Row event argument class
+        ///</summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        public class TBL_M_CONFIGURATIONRowChangeEvent : global::System.EventArgs {
+            
+            private TBL_M_CONFIGURATIONRow eventRow;
+            
+            private global::System.Data.DataRowAction eventAction;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public TBL_M_CONFIGURATIONRowChangeEvent(TBL_M_CONFIGURATIONRow row, global::System.Data.DataRowAction action) {
+                this.eventRow = row;
+                this.eventAction = action;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public TBL_M_CONFIGURATIONRow Row {
+                get {
+                    return this.eventRow;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataRowAction Action {
+                get {
+                    return this.eventAction;
+                }
+            }
+        }
+        
+        /// <summary>
+        ///Row event argument class
+        ///</summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        public class cufn_getslipRowChangeEvent : global::System.EventArgs {
+            
+            private cufn_getslipRow eventRow;
+            
+            private global::System.Data.DataRowAction eventAction;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public cufn_getslipRowChangeEvent(cufn_getslipRow row, global::System.Data.DataRowAction action) {
+                this.eventRow = row;
+                this.eventAction = action;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public cufn_getslipRow Row {
                 get {
                     return this.eventRow;
                 }
@@ -16123,7 +19119,8 @@ SELECT TARE_RAW_ID, TARE_UNIT_NO, TARE_VALUE, TARE_DATETIME FROM TBL_T_TARE_UNIT
             this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@UNIT_NO", global::System.Data.SqlDbType.VarChar, 10, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[2] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[2].Connection = this.Connection;
-            this._commandCollection[2].CommandText = "SELECT * FROM [dbo].[CUFN_GET_TARE_UNIT1] (\r\n   @UNIT)";
+            this._commandCollection[2].CommandText = "SELECT        tare\r\nFROM            dbo.CUFN_GET_TARE_UNIT1(@UNIT) AS CUFN_GET_TA" +
+                "RE_UNIT1_1";
             this._commandCollection[2].CommandType = global::System.Data.CommandType.Text;
             this._commandCollection[2].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@UNIT", global::System.Data.SqlDbType.VarChar, 1024, global::System.Data.ParameterDirection.Input, 0, 0, "", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[3] = new global::System.Data.SqlClient.SqlCommand();
@@ -16739,8 +19736,9 @@ SELECT TRANS_RAW_ID, TRANS_UNIT, TRANS_ENTITY, TRANS_CPP, TRANS_PRODUCT, TRANS_S
             this._commandCollection[3] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[3].Connection = this.Connection;
             this._commandCollection[3].CommandText = @"INSERT INTO TBL_T_TRANSAKSI_18
-                         (TRANS_UNIT, TRANS_ENTITY, TRANS_CPP, TRANS_PRODUCT, TRANS_STOCKPILE, TRANS_LOADER, TRANS_GROSS, TRANS_TARE, TRANS_DATETIME, TRANS_OPERATOR, TRANS_RAW_ID, TRANS_START_TIMBANG)
-VALUES        (@TRANS_UNIT,@TRANS_ENTITY,@TRANS_CPP,@TRANS_PRODUCT,@TRANS_STOCKPILE,@TRANS_LOADER,@TRANS_GROSS,@TRANS_TARE,@TRANS_DATETIME,@TRANS_OPERATOR,@TRANS_RAW_ID,@TRANS_START_TIMBANG)";
+                         (TRANS_UNIT, TRANS_ENTITY, TRANS_CPP, TRANS_PRODUCT, TRANS_STOCKPILE, TRANS_LOADER, TRANS_GROSS, TRANS_TARE, TRANS_DATETIME, TRANS_OPERATOR, TRANS_RAW_ID, TRANS_START_TIMBANG, 
+                         TRANS_DOCKET_ID)
+VALUES        (@TRANS_UNIT,@TRANS_ENTITY,@TRANS_CPP,@TRANS_PRODUCT,@TRANS_STOCKPILE,@TRANS_LOADER,@TRANS_GROSS,@TRANS_TARE,@TRANS_DATETIME,@TRANS_OPERATOR,@TRANS_RAW_ID,@TRANS_START_TIMBANG,@TRANS_DOCKET_ID)";
             this._commandCollection[3].CommandType = global::System.Data.CommandType.Text;
             this._commandCollection[3].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@TRANS_UNIT", global::System.Data.SqlDbType.VarChar, 10, global::System.Data.ParameterDirection.Input, 0, 0, "TRANS_UNIT", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[3].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@TRANS_ENTITY", global::System.Data.SqlDbType.VarChar, 5, global::System.Data.ParameterDirection.Input, 0, 0, "TRANS_ENTITY", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
@@ -16754,6 +19752,7 @@ VALUES        (@TRANS_UNIT,@TRANS_ENTITY,@TRANS_CPP,@TRANS_PRODUCT,@TRANS_STOCKP
             this._commandCollection[3].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@TRANS_OPERATOR", global::System.Data.SqlDbType.VarChar, 20, global::System.Data.ParameterDirection.Input, 0, 0, "TRANS_OPERATOR", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[3].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@TRANS_RAW_ID", global::System.Data.SqlDbType.VarChar, 200, global::System.Data.ParameterDirection.Input, 0, 0, "TRANS_RAW_ID", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[3].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@TRANS_START_TIMBANG", global::System.Data.SqlDbType.DateTime, 8, global::System.Data.ParameterDirection.Input, 0, 0, "TRANS_START_TIMBANG", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[3].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@TRANS_DOCKET_ID", global::System.Data.SqlDbType.VarChar, 200, global::System.Data.ParameterDirection.Input, 0, 0, "TRANS_DOCKET_ID", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -17306,7 +20305,7 @@ VALUES        (@TRANS_UNIT,@TRANS_ENTITY,@TRANS_CPP,@TRANS_PRODUCT,@TRANS_STOCKP
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, false)]
-        public virtual int Insert_trans(string TRANS_UNIT, string TRANS_ENTITY, string TRANS_CPP, string TRANS_PRODUCT, string TRANS_STOCKPILE, string TRANS_LOADER, int TRANS_GROSS, int TRANS_TARE, System.DateTime TRANS_DATETIME, string TRANS_OPERATOR, string TRANS_RAW_ID, System.DateTime TRANS_START_TIMBANG) {
+        public virtual int Insert_trans(string TRANS_UNIT, string TRANS_ENTITY, string TRANS_CPP, string TRANS_PRODUCT, string TRANS_STOCKPILE, string TRANS_LOADER, int TRANS_GROSS, int TRANS_TARE, System.DateTime TRANS_DATETIME, string TRANS_OPERATOR, string TRANS_RAW_ID, System.DateTime TRANS_START_TIMBANG, string TRANS_DOCKET_ID) {
             global::System.Data.SqlClient.SqlCommand command = this.CommandCollection[3];
             if ((TRANS_UNIT == null)) {
                 throw new global::System.ArgumentNullException("TRANS_UNIT");
@@ -17360,6 +20359,12 @@ VALUES        (@TRANS_UNIT,@TRANS_ENTITY,@TRANS_CPP,@TRANS_PRODUCT,@TRANS_STOCKP
                 command.Parameters[10].Value = ((string)(TRANS_RAW_ID));
             }
             command.Parameters[11].Value = ((System.DateTime)(TRANS_START_TIMBANG));
+            if ((TRANS_DOCKET_ID == null)) {
+                command.Parameters[12].Value = global::System.DBNull.Value;
+            }
+            else {
+                command.Parameters[12].Value = ((string)(TRANS_DOCKET_ID));
+            }
             global::System.Data.ConnectionState previousConnectionState = command.Connection.State;
             if (((command.Connection.State & global::System.Data.ConnectionState.Open) 
                         != global::System.Data.ConnectionState.Open)) {
@@ -19587,6 +22592,1050 @@ SELECT STOCKPILE_CODE, STOCKPILE_NAME, STOCKPILE_LOKASI, STOCKPILE_DESC, STOCKPI
     [global::System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner" +
         ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+    public partial class TBL_R_DOCKETTableAdapter : global::System.ComponentModel.Component {
+        
+        private global::System.Data.SqlClient.SqlDataAdapter _adapter;
+        
+        private global::System.Data.SqlClient.SqlConnection _connection;
+        
+        private global::System.Data.SqlClient.SqlTransaction _transaction;
+        
+        private global::System.Data.SqlClient.SqlCommand[] _commandCollection;
+        
+        private bool _clearBeforeFill;
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        public TBL_R_DOCKETTableAdapter() {
+            this.ClearBeforeFill = true;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        protected internal global::System.Data.SqlClient.SqlDataAdapter Adapter {
+            get {
+                if ((this._adapter == null)) {
+                    this.InitAdapter();
+                }
+                return this._adapter;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        internal global::System.Data.SqlClient.SqlConnection Connection {
+            get {
+                if ((this._connection == null)) {
+                    this.InitConnection();
+                }
+                return this._connection;
+            }
+            set {
+                this._connection = value;
+                if ((this.Adapter.InsertCommand != null)) {
+                    this.Adapter.InsertCommand.Connection = value;
+                }
+                if ((this.Adapter.DeleteCommand != null)) {
+                    this.Adapter.DeleteCommand.Connection = value;
+                }
+                if ((this.Adapter.UpdateCommand != null)) {
+                    this.Adapter.UpdateCommand.Connection = value;
+                }
+                for (int i = 0; (i < this.CommandCollection.Length); i = (i + 1)) {
+                    if ((this.CommandCollection[i] != null)) {
+                        ((global::System.Data.SqlClient.SqlCommand)(this.CommandCollection[i])).Connection = value;
+                    }
+                }
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        internal global::System.Data.SqlClient.SqlTransaction Transaction {
+            get {
+                return this._transaction;
+            }
+            set {
+                this._transaction = value;
+                for (int i = 0; (i < this.CommandCollection.Length); i = (i + 1)) {
+                    this.CommandCollection[i].Transaction = this._transaction;
+                }
+                if (((this.Adapter != null) 
+                            && (this.Adapter.DeleteCommand != null))) {
+                    this.Adapter.DeleteCommand.Transaction = this._transaction;
+                }
+                if (((this.Adapter != null) 
+                            && (this.Adapter.InsertCommand != null))) {
+                    this.Adapter.InsertCommand.Transaction = this._transaction;
+                }
+                if (((this.Adapter != null) 
+                            && (this.Adapter.UpdateCommand != null))) {
+                    this.Adapter.UpdateCommand.Transaction = this._transaction;
+                }
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        protected global::System.Data.SqlClient.SqlCommand[] CommandCollection {
+            get {
+                if ((this._commandCollection == null)) {
+                    this.InitCommandCollection();
+                }
+                return this._commandCollection;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        public bool ClearBeforeFill {
+            get {
+                return this._clearBeforeFill;
+            }
+            set {
+                this._clearBeforeFill = value;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        private void InitAdapter() {
+            this._adapter = new global::System.Data.SqlClient.SqlDataAdapter();
+            global::System.Data.Common.DataTableMapping tableMapping = new global::System.Data.Common.DataTableMapping();
+            tableMapping.SourceTable = "Table";
+            tableMapping.DataSetTable = "TBL_R_DOCKET";
+            tableMapping.ColumnMappings.Add("DOCKET_RAW_ID", "DOCKET_RAW_ID");
+            tableMapping.ColumnMappings.Add("DOCKET_UNIT_NO", "DOCKET_UNIT_NO");
+            tableMapping.ColumnMappings.Add("DOCKET_PRODUCT", "DOCKET_PRODUCT");
+            tableMapping.ColumnMappings.Add("DOCKET_LOADER", "DOCKET_LOADER");
+            tableMapping.ColumnMappings.Add("DOCKET_CPP", "DOCKET_CPP");
+            tableMapping.ColumnMappings.Add("DOCKET_STOCKPILE", "DOCKET_STOCKPILE");
+            tableMapping.ColumnMappings.Add("DOCKET_TANGGAL", "DOCKET_TANGGAL");
+            this._adapter.TableMappings.Add(tableMapping);
+            this._adapter.InsertCommand = new global::System.Data.SqlClient.SqlCommand();
+            this._adapter.InsertCommand.Connection = this.Connection;
+            this._adapter.InsertCommand.CommandText = @"INSERT INTO [dbo].[TBL_R_DOCKET] ([DOCKET_RAW_ID], [DOCKET_UNIT_NO], [DOCKET_PRODUCT], [DOCKET_LOADER], [DOCKET_CPP], [DOCKET_STOCKPILE], [DOCKET_TANGGAL]) VALUES (@DOCKET_RAW_ID, @DOCKET_UNIT_NO, @DOCKET_PRODUCT, @DOCKET_LOADER, @DOCKET_CPP, @DOCKET_STOCKPILE, @DOCKET_TANGGAL)";
+            this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@DOCKET_RAW_ID", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "DOCKET_RAW_ID", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@DOCKET_UNIT_NO", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "DOCKET_UNIT_NO", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@DOCKET_PRODUCT", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "DOCKET_PRODUCT", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@DOCKET_LOADER", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "DOCKET_LOADER", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@DOCKET_CPP", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "DOCKET_CPP", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@DOCKET_STOCKPILE", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "DOCKET_STOCKPILE", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@DOCKET_TANGGAL", global::System.Data.SqlDbType.DateTime, 0, global::System.Data.ParameterDirection.Input, 0, 0, "DOCKET_TANGGAL", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        private void InitConnection() {
+            this._connection = new global::System.Data.SqlClient.SqlConnection();
+            this._connection.ConnectionString = global::WinForms.Properties.Settings.Default.DB_JT18ConnectionString;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        private void InitCommandCollection() {
+            this._commandCollection = new global::System.Data.SqlClient.SqlCommand[2];
+            this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
+            this._commandCollection[0].Connection = this.Connection;
+            this._commandCollection[0].CommandText = "SELECT DOCKET_RAW_ID, DOCKET_UNIT_NO, DOCKET_PRODUCT, DOCKET_LOADER, DOCKET_CPP, " +
+                "DOCKET_STOCKPILE, DOCKET_TANGGAL FROM dbo.TBL_R_DOCKET";
+            this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[1] = new global::System.Data.SqlClient.SqlCommand();
+            this._commandCollection[1].Connection = this.Connection;
+            this._commandCollection[1].CommandText = "dbo.cusp_pagingtable";
+            this._commandCollection[1].CommandType = global::System.Data.CommandType.StoredProcedure;
+            this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@RETURN_VALUE", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.ReturnValue, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@tablename", global::System.Data.SqlDbType.VarChar, 100, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@filter", global::System.Data.SqlDbType.VarChar, 2147483647, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@sort", global::System.Data.SqlDbType.VarChar, 2147483647, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@page_size", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@page_index", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
+        public virtual int Fill(DSJT18.TBL_R_DOCKETDataTable dataTable) {
+            this.Adapter.SelectCommand = this.CommandCollection[0];
+            if ((this.ClearBeforeFill == true)) {
+                dataTable.Clear();
+            }
+            int returnValue = this.Adapter.Fill(dataTable);
+            return returnValue;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
+        public virtual DSJT18.TBL_R_DOCKETDataTable GetData() {
+            this.Adapter.SelectCommand = this.CommandCollection[0];
+            DSJT18.TBL_R_DOCKETDataTable dataTable = new DSJT18.TBL_R_DOCKETDataTable();
+            this.Adapter.Fill(dataTable);
+            return dataTable;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, false)]
+        public virtual DSJT18.TBL_R_DOCKETDataTable PagingData(string tablename, string filter, string sort, global::System.Nullable<int> page_size, global::System.Nullable<int> page_index) {
+            this.Adapter.SelectCommand = this.CommandCollection[1];
+            if ((tablename == null)) {
+                this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[1].Value = ((string)(tablename));
+            }
+            if ((filter == null)) {
+                this.Adapter.SelectCommand.Parameters[2].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[2].Value = ((string)(filter));
+            }
+            if ((sort == null)) {
+                this.Adapter.SelectCommand.Parameters[3].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[3].Value = ((string)(sort));
+            }
+            if ((page_size.HasValue == true)) {
+                this.Adapter.SelectCommand.Parameters[4].Value = ((int)(page_size.Value));
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[4].Value = global::System.DBNull.Value;
+            }
+            if ((page_index.HasValue == true)) {
+                this.Adapter.SelectCommand.Parameters[5].Value = ((int)(page_index.Value));
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[5].Value = global::System.DBNull.Value;
+            }
+            DSJT18.TBL_R_DOCKETDataTable dataTable = new DSJT18.TBL_R_DOCKETDataTable();
+            this.Adapter.Fill(dataTable);
+            return dataTable;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        public virtual int Update(DSJT18.TBL_R_DOCKETDataTable dataTable) {
+            return this.Adapter.Update(dataTable);
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        public virtual int Update(DSJT18 dataSet) {
+            return this.Adapter.Update(dataSet, "TBL_R_DOCKET");
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        public virtual int Update(global::System.Data.DataRow dataRow) {
+            return this.Adapter.Update(new global::System.Data.DataRow[] {
+                        dataRow});
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        public virtual int Update(global::System.Data.DataRow[] dataRows) {
+            return this.Adapter.Update(dataRows);
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, true)]
+        public virtual int Insert(string DOCKET_RAW_ID, string DOCKET_UNIT_NO, string DOCKET_PRODUCT, string DOCKET_LOADER, string DOCKET_CPP, string DOCKET_STOCKPILE, global::System.Nullable<global::System.DateTime> DOCKET_TANGGAL) {
+            if ((DOCKET_RAW_ID == null)) {
+                this.Adapter.InsertCommand.Parameters[0].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[0].Value = ((string)(DOCKET_RAW_ID));
+            }
+            if ((DOCKET_UNIT_NO == null)) {
+                this.Adapter.InsertCommand.Parameters[1].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[1].Value = ((string)(DOCKET_UNIT_NO));
+            }
+            if ((DOCKET_PRODUCT == null)) {
+                this.Adapter.InsertCommand.Parameters[2].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[2].Value = ((string)(DOCKET_PRODUCT));
+            }
+            if ((DOCKET_LOADER == null)) {
+                this.Adapter.InsertCommand.Parameters[3].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[3].Value = ((string)(DOCKET_LOADER));
+            }
+            if ((DOCKET_CPP == null)) {
+                this.Adapter.InsertCommand.Parameters[4].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[4].Value = ((string)(DOCKET_CPP));
+            }
+            if ((DOCKET_STOCKPILE == null)) {
+                this.Adapter.InsertCommand.Parameters[5].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[5].Value = ((string)(DOCKET_STOCKPILE));
+            }
+            if ((DOCKET_TANGGAL.HasValue == true)) {
+                this.Adapter.InsertCommand.Parameters[6].Value = ((System.DateTime)(DOCKET_TANGGAL.Value));
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[6].Value = global::System.DBNull.Value;
+            }
+            global::System.Data.ConnectionState previousConnectionState = this.Adapter.InsertCommand.Connection.State;
+            if (((this.Adapter.InsertCommand.Connection.State & global::System.Data.ConnectionState.Open) 
+                        != global::System.Data.ConnectionState.Open)) {
+                this.Adapter.InsertCommand.Connection.Open();
+            }
+            try {
+                int returnValue = this.Adapter.InsertCommand.ExecuteNonQuery();
+                return returnValue;
+            }
+            finally {
+                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
+                    this.Adapter.InsertCommand.Connection.Close();
+                }
+            }
+        }
+    }
+    
+    /// <summary>
+    ///Represents the connection and commands used to retrieve and save data.
+    ///</summary>
+    [global::System.ComponentModel.DesignerCategoryAttribute("code")]
+    [global::System.ComponentModel.ToolboxItem(true)]
+    [global::System.ComponentModel.DataObjectAttribute(true)]
+    [global::System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner" +
+        ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
+    [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+    public partial class VW_R_DOCKETTableAdapter : global::System.ComponentModel.Component {
+        
+        private global::System.Data.SqlClient.SqlDataAdapter _adapter;
+        
+        private global::System.Data.SqlClient.SqlConnection _connection;
+        
+        private global::System.Data.SqlClient.SqlTransaction _transaction;
+        
+        private global::System.Data.SqlClient.SqlCommand[] _commandCollection;
+        
+        private bool _clearBeforeFill;
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        public VW_R_DOCKETTableAdapter() {
+            this.ClearBeforeFill = true;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        protected internal global::System.Data.SqlClient.SqlDataAdapter Adapter {
+            get {
+                if ((this._adapter == null)) {
+                    this.InitAdapter();
+                }
+                return this._adapter;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        internal global::System.Data.SqlClient.SqlConnection Connection {
+            get {
+                if ((this._connection == null)) {
+                    this.InitConnection();
+                }
+                return this._connection;
+            }
+            set {
+                this._connection = value;
+                if ((this.Adapter.InsertCommand != null)) {
+                    this.Adapter.InsertCommand.Connection = value;
+                }
+                if ((this.Adapter.DeleteCommand != null)) {
+                    this.Adapter.DeleteCommand.Connection = value;
+                }
+                if ((this.Adapter.UpdateCommand != null)) {
+                    this.Adapter.UpdateCommand.Connection = value;
+                }
+                for (int i = 0; (i < this.CommandCollection.Length); i = (i + 1)) {
+                    if ((this.CommandCollection[i] != null)) {
+                        ((global::System.Data.SqlClient.SqlCommand)(this.CommandCollection[i])).Connection = value;
+                    }
+                }
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        internal global::System.Data.SqlClient.SqlTransaction Transaction {
+            get {
+                return this._transaction;
+            }
+            set {
+                this._transaction = value;
+                for (int i = 0; (i < this.CommandCollection.Length); i = (i + 1)) {
+                    this.CommandCollection[i].Transaction = this._transaction;
+                }
+                if (((this.Adapter != null) 
+                            && (this.Adapter.DeleteCommand != null))) {
+                    this.Adapter.DeleteCommand.Transaction = this._transaction;
+                }
+                if (((this.Adapter != null) 
+                            && (this.Adapter.InsertCommand != null))) {
+                    this.Adapter.InsertCommand.Transaction = this._transaction;
+                }
+                if (((this.Adapter != null) 
+                            && (this.Adapter.UpdateCommand != null))) {
+                    this.Adapter.UpdateCommand.Transaction = this._transaction;
+                }
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        protected global::System.Data.SqlClient.SqlCommand[] CommandCollection {
+            get {
+                if ((this._commandCollection == null)) {
+                    this.InitCommandCollection();
+                }
+                return this._commandCollection;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        public bool ClearBeforeFill {
+            get {
+                return this._clearBeforeFill;
+            }
+            set {
+                this._clearBeforeFill = value;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        private void InitAdapter() {
+            this._adapter = new global::System.Data.SqlClient.SqlDataAdapter();
+            global::System.Data.Common.DataTableMapping tableMapping = new global::System.Data.Common.DataTableMapping();
+            tableMapping.SourceTable = "Table";
+            tableMapping.DataSetTable = "VW_R_DOCKET";
+            tableMapping.ColumnMappings.Add("DOCKET_RAW_ID", "DOCKET_RAW_ID");
+            tableMapping.ColumnMappings.Add("DOCKET_UNIT_NO", "DOCKET_UNIT_NO");
+            tableMapping.ColumnMappings.Add("DOCKET_PRODUCT", "DOCKET_PRODUCT");
+            tableMapping.ColumnMappings.Add("DOCKET_LOADER", "DOCKET_LOADER");
+            tableMapping.ColumnMappings.Add("DOCKET_CPP", "DOCKET_CPP");
+            tableMapping.ColumnMappings.Add("DOCKET_STOCKPILE", "DOCKET_STOCKPILE");
+            tableMapping.ColumnMappings.Add("DOCKET_TANGGAL", "DOCKET_TANGGAL");
+            tableMapping.ColumnMappings.Add("UNIT_ENTITY", "UNIT_ENTITY");
+            tableMapping.ColumnMappings.Add("ENTITY_NAME", "ENTITY_NAME");
+            this._adapter.TableMappings.Add(tableMapping);
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        private void InitConnection() {
+            this._connection = new global::System.Data.SqlClient.SqlConnection();
+            this._connection.ConnectionString = global::WinForms.Properties.Settings.Default.DB_JT18ConnectionString;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        private void InitCommandCollection() {
+            this._commandCollection = new global::System.Data.SqlClient.SqlCommand[3];
+            this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
+            this._commandCollection[0].Connection = this.Connection;
+            this._commandCollection[0].CommandText = "SELECT DOCKET_RAW_ID, DOCKET_UNIT_NO, DOCKET_PRODUCT, DOCKET_LOADER, DOCKET_CPP, " +
+                "DOCKET_STOCKPILE, DOCKET_TANGGAL, ENTITY_NAME, UNIT_ENTITY FROM VW_R_DOCKET";
+            this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[1] = new global::System.Data.SqlClient.SqlCommand();
+            this._commandCollection[1].Connection = this.Connection;
+            this._commandCollection[1].CommandText = "SELECT DOCKET_RAW_ID, DOCKET_UNIT_NO, DOCKET_PRODUCT, DOCKET_LOADER, DOCKET_CPP, " +
+                "DOCKET_STOCKPILE, DOCKET_TANGGAL, ENTITY_NAME, UNIT_ENTITY FROM VW_R_DOCKET WHER" +
+                "E (DOCKET_UNIT_NO = @DOCKET_UNIT_NO)";
+            this._commandCollection[1].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@DOCKET_UNIT_NO", global::System.Data.SqlDbType.VarChar, 10, global::System.Data.ParameterDirection.Input, 0, 0, "DOCKET_UNIT_NO", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[2] = new global::System.Data.SqlClient.SqlCommand();
+            this._commandCollection[2].Connection = this.Connection;
+            this._commandCollection[2].CommandText = "dbo.cusp_pagingtable";
+            this._commandCollection[2].CommandType = global::System.Data.CommandType.StoredProcedure;
+            this._commandCollection[2].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@RETURN_VALUE", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.ReturnValue, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[2].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@tablename", global::System.Data.SqlDbType.VarChar, 100, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[2].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@filter", global::System.Data.SqlDbType.VarChar, 2147483647, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[2].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@sort", global::System.Data.SqlDbType.VarChar, 2147483647, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[2].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@page_size", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[2].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@page_index", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
+        public virtual int Fill(DSJT18.VW_R_DOCKETDataTable dataTable) {
+            this.Adapter.SelectCommand = this.CommandCollection[0];
+            if ((this.ClearBeforeFill == true)) {
+                dataTable.Clear();
+            }
+            int returnValue = this.Adapter.Fill(dataTable);
+            return returnValue;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
+        public virtual DSJT18.VW_R_DOCKETDataTable GetData() {
+            this.Adapter.SelectCommand = this.CommandCollection[0];
+            DSJT18.VW_R_DOCKETDataTable dataTable = new DSJT18.VW_R_DOCKETDataTable();
+            this.Adapter.Fill(dataTable);
+            return dataTable;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, false)]
+        public virtual DSJT18.VW_R_DOCKETDataTable GetDataUnit(string DOCKET_UNIT_NO) {
+            this.Adapter.SelectCommand = this.CommandCollection[1];
+            if ((DOCKET_UNIT_NO == null)) {
+                this.Adapter.SelectCommand.Parameters[0].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[0].Value = ((string)(DOCKET_UNIT_NO));
+            }
+            DSJT18.VW_R_DOCKETDataTable dataTable = new DSJT18.VW_R_DOCKETDataTable();
+            this.Adapter.Fill(dataTable);
+            return dataTable;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, false)]
+        public virtual DSJT18.VW_R_DOCKETDataTable PagingData(string tablename, string filter, string sort, global::System.Nullable<int> page_size, global::System.Nullable<int> page_index) {
+            this.Adapter.SelectCommand = this.CommandCollection[2];
+            if ((tablename == null)) {
+                this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[1].Value = ((string)(tablename));
+            }
+            if ((filter == null)) {
+                this.Adapter.SelectCommand.Parameters[2].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[2].Value = ((string)(filter));
+            }
+            if ((sort == null)) {
+                this.Adapter.SelectCommand.Parameters[3].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[3].Value = ((string)(sort));
+            }
+            if ((page_size.HasValue == true)) {
+                this.Adapter.SelectCommand.Parameters[4].Value = ((int)(page_size.Value));
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[4].Value = global::System.DBNull.Value;
+            }
+            if ((page_index.HasValue == true)) {
+                this.Adapter.SelectCommand.Parameters[5].Value = ((int)(page_index.Value));
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[5].Value = global::System.DBNull.Value;
+            }
+            DSJT18.VW_R_DOCKETDataTable dataTable = new DSJT18.VW_R_DOCKETDataTable();
+            this.Adapter.Fill(dataTable);
+            return dataTable;
+        }
+    }
+    
+    /// <summary>
+    ///Represents the connection and commands used to retrieve and save data.
+    ///</summary>
+    [global::System.ComponentModel.DesignerCategoryAttribute("code")]
+    [global::System.ComponentModel.ToolboxItem(true)]
+    [global::System.ComponentModel.DataObjectAttribute(true)]
+    [global::System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner" +
+        ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
+    [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+    public partial class TBL_M_CONFIGURATIONTableAdapter : global::System.ComponentModel.Component {
+        
+        private global::System.Data.SqlClient.SqlDataAdapter _adapter;
+        
+        private global::System.Data.SqlClient.SqlConnection _connection;
+        
+        private global::System.Data.SqlClient.SqlTransaction _transaction;
+        
+        private global::System.Data.SqlClient.SqlCommand[] _commandCollection;
+        
+        private bool _clearBeforeFill;
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        public TBL_M_CONFIGURATIONTableAdapter() {
+            this.ClearBeforeFill = true;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        protected internal global::System.Data.SqlClient.SqlDataAdapter Adapter {
+            get {
+                if ((this._adapter == null)) {
+                    this.InitAdapter();
+                }
+                return this._adapter;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        internal global::System.Data.SqlClient.SqlConnection Connection {
+            get {
+                if ((this._connection == null)) {
+                    this.InitConnection();
+                }
+                return this._connection;
+            }
+            set {
+                this._connection = value;
+                if ((this.Adapter.InsertCommand != null)) {
+                    this.Adapter.InsertCommand.Connection = value;
+                }
+                if ((this.Adapter.DeleteCommand != null)) {
+                    this.Adapter.DeleteCommand.Connection = value;
+                }
+                if ((this.Adapter.UpdateCommand != null)) {
+                    this.Adapter.UpdateCommand.Connection = value;
+                }
+                for (int i = 0; (i < this.CommandCollection.Length); i = (i + 1)) {
+                    if ((this.CommandCollection[i] != null)) {
+                        ((global::System.Data.SqlClient.SqlCommand)(this.CommandCollection[i])).Connection = value;
+                    }
+                }
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        internal global::System.Data.SqlClient.SqlTransaction Transaction {
+            get {
+                return this._transaction;
+            }
+            set {
+                this._transaction = value;
+                for (int i = 0; (i < this.CommandCollection.Length); i = (i + 1)) {
+                    this.CommandCollection[i].Transaction = this._transaction;
+                }
+                if (((this.Adapter != null) 
+                            && (this.Adapter.DeleteCommand != null))) {
+                    this.Adapter.DeleteCommand.Transaction = this._transaction;
+                }
+                if (((this.Adapter != null) 
+                            && (this.Adapter.InsertCommand != null))) {
+                    this.Adapter.InsertCommand.Transaction = this._transaction;
+                }
+                if (((this.Adapter != null) 
+                            && (this.Adapter.UpdateCommand != null))) {
+                    this.Adapter.UpdateCommand.Transaction = this._transaction;
+                }
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        protected global::System.Data.SqlClient.SqlCommand[] CommandCollection {
+            get {
+                if ((this._commandCollection == null)) {
+                    this.InitCommandCollection();
+                }
+                return this._commandCollection;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        public bool ClearBeforeFill {
+            get {
+                return this._clearBeforeFill;
+            }
+            set {
+                this._clearBeforeFill = value;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        private void InitAdapter() {
+            this._adapter = new global::System.Data.SqlClient.SqlDataAdapter();
+            global::System.Data.Common.DataTableMapping tableMapping = new global::System.Data.Common.DataTableMapping();
+            tableMapping.SourceTable = "Table";
+            tableMapping.DataSetTable = "TBL_M_CONFIGURATION";
+            tableMapping.ColumnMappings.Add("CONF_COMPANY", "CONF_COMPANY");
+            tableMapping.ColumnMappings.Add("CONF_SITE", "CONF_SITE");
+            tableMapping.ColumnMappings.Add("CONF_TIMBANGAN", "CONF_TIMBANGAN");
+            tableMapping.ColumnMappings.Add("CONF_LOKASI_KAB", "CONF_LOKASI_KAB");
+            tableMapping.ColumnMappings.Add("CONF_LOKASI_PROV", "CONF_LOKASI_PROV");
+            this._adapter.TableMappings.Add(tableMapping);
+            this._adapter.InsertCommand = new global::System.Data.SqlClient.SqlCommand();
+            this._adapter.InsertCommand.Connection = this.Connection;
+            this._adapter.InsertCommand.CommandText = "INSERT INTO [dbo].[TBL_M_CONFIGURATION] ([CONF_COMPANY], [CONF_SITE], [CONF_TIMBA" +
+                "NGAN], [CONF_LOKASI_KAB], [CONF_LOKASI_PROV]) VALUES (@CONF_COMPANY, @CONF_SITE," +
+                " @CONF_TIMBANGAN, @CONF_LOKASI_KAB, @CONF_LOKASI_PROV)";
+            this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@CONF_COMPANY", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "CONF_COMPANY", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@CONF_SITE", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "CONF_SITE", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@CONF_TIMBANGAN", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "CONF_TIMBANGAN", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@CONF_LOKASI_KAB", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "CONF_LOKASI_KAB", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@CONF_LOKASI_PROV", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "CONF_LOKASI_PROV", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        private void InitConnection() {
+            this._connection = new global::System.Data.SqlClient.SqlConnection();
+            this._connection.ConnectionString = global::WinForms.Properties.Settings.Default.DB_JT18ConnectionString;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        private void InitCommandCollection() {
+            this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
+            this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
+            this._commandCollection[0].Connection = this.Connection;
+            this._commandCollection[0].CommandText = "SELECT CONF_COMPANY, CONF_SITE, CONF_TIMBANGAN, CONF_LOKASI_KAB, CONF_LOKASI_PROV" +
+                " FROM dbo.TBL_M_CONFIGURATION";
+            this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
+        public virtual int Fill(DSJT18.TBL_M_CONFIGURATIONDataTable dataTable) {
+            this.Adapter.SelectCommand = this.CommandCollection[0];
+            if ((this.ClearBeforeFill == true)) {
+                dataTable.Clear();
+            }
+            int returnValue = this.Adapter.Fill(dataTable);
+            return returnValue;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
+        public virtual DSJT18.TBL_M_CONFIGURATIONDataTable GetData() {
+            this.Adapter.SelectCommand = this.CommandCollection[0];
+            DSJT18.TBL_M_CONFIGURATIONDataTable dataTable = new DSJT18.TBL_M_CONFIGURATIONDataTable();
+            this.Adapter.Fill(dataTable);
+            return dataTable;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        public virtual int Update(DSJT18.TBL_M_CONFIGURATIONDataTable dataTable) {
+            return this.Adapter.Update(dataTable);
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        public virtual int Update(DSJT18 dataSet) {
+            return this.Adapter.Update(dataSet, "TBL_M_CONFIGURATION");
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        public virtual int Update(global::System.Data.DataRow dataRow) {
+            return this.Adapter.Update(new global::System.Data.DataRow[] {
+                        dataRow});
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        public virtual int Update(global::System.Data.DataRow[] dataRows) {
+            return this.Adapter.Update(dataRows);
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, true)]
+        public virtual int Insert(string CONF_COMPANY, string CONF_SITE, string CONF_TIMBANGAN, string CONF_LOKASI_KAB, string CONF_LOKASI_PROV) {
+            if ((CONF_COMPANY == null)) {
+                this.Adapter.InsertCommand.Parameters[0].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[0].Value = ((string)(CONF_COMPANY));
+            }
+            if ((CONF_SITE == null)) {
+                this.Adapter.InsertCommand.Parameters[1].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[1].Value = ((string)(CONF_SITE));
+            }
+            if ((CONF_TIMBANGAN == null)) {
+                this.Adapter.InsertCommand.Parameters[2].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[2].Value = ((string)(CONF_TIMBANGAN));
+            }
+            if ((CONF_LOKASI_KAB == null)) {
+                this.Adapter.InsertCommand.Parameters[3].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[3].Value = ((string)(CONF_LOKASI_KAB));
+            }
+            if ((CONF_LOKASI_PROV == null)) {
+                this.Adapter.InsertCommand.Parameters[4].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[4].Value = ((string)(CONF_LOKASI_PROV));
+            }
+            global::System.Data.ConnectionState previousConnectionState = this.Adapter.InsertCommand.Connection.State;
+            if (((this.Adapter.InsertCommand.Connection.State & global::System.Data.ConnectionState.Open) 
+                        != global::System.Data.ConnectionState.Open)) {
+                this.Adapter.InsertCommand.Connection.Open();
+            }
+            try {
+                int returnValue = this.Adapter.InsertCommand.ExecuteNonQuery();
+                return returnValue;
+            }
+            finally {
+                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
+                    this.Adapter.InsertCommand.Connection.Close();
+                }
+            }
+        }
+    }
+    
+    /// <summary>
+    ///Represents the connection and commands used to retrieve and save data.
+    ///</summary>
+    [global::System.ComponentModel.DesignerCategoryAttribute("code")]
+    [global::System.ComponentModel.ToolboxItem(true)]
+    [global::System.ComponentModel.DataObjectAttribute(true)]
+    [global::System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner" +
+        ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
+    [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+    public partial class cufn_getslipTableAdapter : global::System.ComponentModel.Component {
+        
+        private global::System.Data.SqlClient.SqlDataAdapter _adapter;
+        
+        private global::System.Data.SqlClient.SqlConnection _connection;
+        
+        private global::System.Data.SqlClient.SqlTransaction _transaction;
+        
+        private global::System.Data.SqlClient.SqlCommand[] _commandCollection;
+        
+        private bool _clearBeforeFill;
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        public cufn_getslipTableAdapter() {
+            this.ClearBeforeFill = true;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        protected internal global::System.Data.SqlClient.SqlDataAdapter Adapter {
+            get {
+                if ((this._adapter == null)) {
+                    this.InitAdapter();
+                }
+                return this._adapter;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        internal global::System.Data.SqlClient.SqlConnection Connection {
+            get {
+                if ((this._connection == null)) {
+                    this.InitConnection();
+                }
+                return this._connection;
+            }
+            set {
+                this._connection = value;
+                if ((this.Adapter.InsertCommand != null)) {
+                    this.Adapter.InsertCommand.Connection = value;
+                }
+                if ((this.Adapter.DeleteCommand != null)) {
+                    this.Adapter.DeleteCommand.Connection = value;
+                }
+                if ((this.Adapter.UpdateCommand != null)) {
+                    this.Adapter.UpdateCommand.Connection = value;
+                }
+                for (int i = 0; (i < this.CommandCollection.Length); i = (i + 1)) {
+                    if ((this.CommandCollection[i] != null)) {
+                        ((global::System.Data.SqlClient.SqlCommand)(this.CommandCollection[i])).Connection = value;
+                    }
+                }
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        internal global::System.Data.SqlClient.SqlTransaction Transaction {
+            get {
+                return this._transaction;
+            }
+            set {
+                this._transaction = value;
+                for (int i = 0; (i < this.CommandCollection.Length); i = (i + 1)) {
+                    this.CommandCollection[i].Transaction = this._transaction;
+                }
+                if (((this.Adapter != null) 
+                            && (this.Adapter.DeleteCommand != null))) {
+                    this.Adapter.DeleteCommand.Transaction = this._transaction;
+                }
+                if (((this.Adapter != null) 
+                            && (this.Adapter.InsertCommand != null))) {
+                    this.Adapter.InsertCommand.Transaction = this._transaction;
+                }
+                if (((this.Adapter != null) 
+                            && (this.Adapter.UpdateCommand != null))) {
+                    this.Adapter.UpdateCommand.Transaction = this._transaction;
+                }
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        protected global::System.Data.SqlClient.SqlCommand[] CommandCollection {
+            get {
+                if ((this._commandCollection == null)) {
+                    this.InitCommandCollection();
+                }
+                return this._commandCollection;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        public bool ClearBeforeFill {
+            get {
+                return this._clearBeforeFill;
+            }
+            set {
+                this._clearBeforeFill = value;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        private void InitAdapter() {
+            this._adapter = new global::System.Data.SqlClient.SqlDataAdapter();
+            global::System.Data.Common.DataTableMapping tableMapping = new global::System.Data.Common.DataTableMapping();
+            tableMapping.SourceTable = "Table";
+            tableMapping.DataSetTable = "cufn_getslip";
+            tableMapping.ColumnMappings.Add("TRANS_RAW_ID", "TRANS_RAW_ID");
+            tableMapping.ColumnMappings.Add("TRANS_TGL_PRODUKSI", "TRANS_TGL_PRODUKSI");
+            tableMapping.ColumnMappings.Add("TRANS_UNIT", "TRANS_UNIT");
+            tableMapping.ColumnMappings.Add("UNIT_ENTITY", "UNIT_ENTITY");
+            tableMapping.ColumnMappings.Add("UNIT_KONTRAKTOR", "UNIT_KONTRAKTOR");
+            tableMapping.ColumnMappings.Add("TRANS_ENTITY", "TRANS_ENTITY");
+            tableMapping.ColumnMappings.Add("ENTITY_NAME", "ENTITY_NAME");
+            tableMapping.ColumnMappings.Add("TRANS_CPP", "TRANS_CPP");
+            tableMapping.ColumnMappings.Add("CPP_LOKASI", "CPP_LOKASI");
+            tableMapping.ColumnMappings.Add("TRANS_PRODUCT", "TRANS_PRODUCT");
+            tableMapping.ColumnMappings.Add("PRODUCT_NAME", "PRODUCT_NAME");
+            tableMapping.ColumnMappings.Add("TRANS_LOADER", "TRANS_LOADER");
+            tableMapping.ColumnMappings.Add("TRANS_GROSS", "TRANS_GROSS");
+            tableMapping.ColumnMappings.Add("TRANS_TARE", "TRANS_TARE");
+            tableMapping.ColumnMappings.Add("TRANS_NETTO", "TRANS_NETTO");
+            tableMapping.ColumnMappings.Add("TRANS_STOCKPILE", "TRANS_STOCKPILE");
+            tableMapping.ColumnMappings.Add("STOCKPILE_NAME", "STOCKPILE_NAME");
+            tableMapping.ColumnMappings.Add("STOCKPILE_LOKASI", "STOCKPILE_LOKASI");
+            tableMapping.ColumnMappings.Add("TRANS_START_TIMBANG", "TRANS_START_TIMBANG");
+            tableMapping.ColumnMappings.Add("TRANS_DATETIME", "TRANS_DATETIME");
+            tableMapping.ColumnMappings.Add("TRANS_UPDATE_AT", "TRANS_UPDATE_AT");
+            tableMapping.ColumnMappings.Add("TRANS_OPERATOR", "TRANS_OPERATOR");
+            tableMapping.ColumnMappings.Add("TRANS_DOCKET_ID", "TRANS_DOCKET_ID");
+            this._adapter.TableMappings.Add(tableMapping);
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        private void InitConnection() {
+            this._connection = new global::System.Data.SqlClient.SqlConnection();
+            this._connection.ConnectionString = global::WinForms.Properties.Settings.Default.DB_JT18ConnectionString;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        private void InitCommandCollection() {
+            this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
+            this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
+            this._commandCollection[0].Connection = this.Connection;
+            this._commandCollection[0].CommandText = @"SELECT TRANS_RAW_ID, TRANS_TGL_PRODUKSI, TRANS_UNIT, UNIT_ENTITY, UNIT_KONTRAKTOR, TRANS_ENTITY, ENTITY_NAME, TRANS_CPP, CPP_LOKASI, TRANS_PRODUCT, PRODUCT_NAME, TRANS_LOADER, TRANS_GROSS, TRANS_TARE, TRANS_NETTO, TRANS_STOCKPILE, STOCKPILE_NAME, STOCKPILE_LOKASI, TRANS_START_TIMBANG, TRANS_DATETIME, TRANS_UPDATE_AT, TRANS_OPERATOR, TRANS_DOCKET_ID FROM dbo.cufn_getslip(@TRANS_RAW_ID)";
+            this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@TRANS_RAW_ID", global::System.Data.SqlDbType.VarChar, 1024, global::System.Data.ParameterDirection.Input, 0, 0, "", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
+        public virtual int Fill(DSJT18.cufn_getslipDataTable dataTable, string TRANS_RAW_ID) {
+            this.Adapter.SelectCommand = this.CommandCollection[0];
+            if ((TRANS_RAW_ID == null)) {
+                throw new global::System.ArgumentNullException("TRANS_RAW_ID");
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[0].Value = ((string)(TRANS_RAW_ID));
+            }
+            if ((this.ClearBeforeFill == true)) {
+                dataTable.Clear();
+            }
+            int returnValue = this.Adapter.Fill(dataTable);
+            return returnValue;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
+        public virtual DSJT18.cufn_getslipDataTable GetData(string TRANS_RAW_ID) {
+            this.Adapter.SelectCommand = this.CommandCollection[0];
+            if ((TRANS_RAW_ID == null)) {
+                throw new global::System.ArgumentNullException("TRANS_RAW_ID");
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[0].Value = ((string)(TRANS_RAW_ID));
+            }
+            DSJT18.cufn_getslipDataTable dataTable = new DSJT18.cufn_getslipDataTable();
+            this.Adapter.Fill(dataTable);
+            return dataTable;
+        }
+    }
+    
+    /// <summary>
+    ///Represents the connection and commands used to retrieve and save data.
+    ///</summary>
+    [global::System.ComponentModel.DesignerCategoryAttribute("code")]
+    [global::System.ComponentModel.ToolboxItem(true)]
+    [global::System.ComponentModel.DataObjectAttribute(true)]
+    [global::System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner" +
+        ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
+    [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
     public partial class QueriesTableAdapter : global::System.ComponentModel.Component {
         
         private global::System.Data.IDbCommand[] _commandCollection;
@@ -19903,6 +23952,10 @@ SELECT STOCKPILE_CODE, STOCKPILE_NAME, STOCKPILE_LOKASI, STOCKPILE_DESC, STOCKPI
         
         private TBL_R_STOCKPILETableAdapter _tBL_R_STOCKPILETableAdapter;
         
+        private TBL_R_DOCKETTableAdapter _tBL_R_DOCKETTableAdapter;
+        
+        private TBL_M_CONFIGURATIONTableAdapter _tBL_M_CONFIGURATIONTableAdapter;
+        
         private bool _backupDataSetBeforeUpdate;
         
         private global::System.Data.IDbConnection _connection;
@@ -20088,6 +24141,34 @@ SELECT STOCKPILE_CODE, STOCKPILE_NAME, STOCKPILE_LOKASI, STOCKPILE_DESC, STOCKPI
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        [global::System.ComponentModel.EditorAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterManagerPropertyEditor, Microso" +
+            "ft.VSDesigner, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3" +
+            "a", "System.Drawing.Design.UITypeEditor")]
+        public TBL_R_DOCKETTableAdapter TBL_R_DOCKETTableAdapter {
+            get {
+                return this._tBL_R_DOCKETTableAdapter;
+            }
+            set {
+                this._tBL_R_DOCKETTableAdapter = value;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        [global::System.ComponentModel.EditorAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterManagerPropertyEditor, Microso" +
+            "ft.VSDesigner, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3" +
+            "a", "System.Drawing.Design.UITypeEditor")]
+        public TBL_M_CONFIGURATIONTableAdapter TBL_M_CONFIGURATIONTableAdapter {
+            get {
+                return this._tBL_M_CONFIGURATIONTableAdapter;
+            }
+            set {
+                this._tBL_M_CONFIGURATIONTableAdapter = value;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         public bool BackupDataSetBeforeUpdate {
             get {
                 return this._backupDataSetBeforeUpdate;
@@ -20153,6 +24234,14 @@ SELECT STOCKPILE_CODE, STOCKPILE_NAME, STOCKPILE_LOKASI, STOCKPILE_DESC, STOCKPI
                             && (this._tBL_R_STOCKPILETableAdapter.Connection != null))) {
                     return this._tBL_R_STOCKPILETableAdapter.Connection;
                 }
+                if (((this._tBL_R_DOCKETTableAdapter != null) 
+                            && (this._tBL_R_DOCKETTableAdapter.Connection != null))) {
+                    return this._tBL_R_DOCKETTableAdapter.Connection;
+                }
+                if (((this._tBL_M_CONFIGURATIONTableAdapter != null) 
+                            && (this._tBL_M_CONFIGURATIONTableAdapter.Connection != null))) {
+                    return this._tBL_M_CONFIGURATIONTableAdapter.Connection;
+                }
                 return null;
             }
             set {
@@ -20202,6 +24291,12 @@ SELECT STOCKPILE_CODE, STOCKPILE_NAME, STOCKPILE_LOKASI, STOCKPILE_DESC, STOCKPI
                 if ((this._tBL_R_STOCKPILETableAdapter != null)) {
                     count = (count + 1);
                 }
+                if ((this._tBL_R_DOCKETTableAdapter != null)) {
+                    count = (count + 1);
+                }
+                if ((this._tBL_M_CONFIGURATIONTableAdapter != null)) {
+                    count = (count + 1);
+                }
                 return count;
             }
         }
@@ -20219,6 +24314,24 @@ SELECT STOCKPILE_CODE, STOCKPILE_NAME, STOCKPILE_LOKASI, STOCKPILE_DESC, STOCKPI
                 if (((updatedRows != null) 
                             && (0 < updatedRows.Length))) {
                     result = (result + this._tBL_M_AKSESTableAdapter.Update(updatedRows));
+                    allChangedRows.AddRange(updatedRows);
+                }
+            }
+            if ((this._tBL_R_DOCKETTableAdapter != null)) {
+                global::System.Data.DataRow[] updatedRows = dataSet.TBL_R_DOCKET.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
+                updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
+                if (((updatedRows != null) 
+                            && (0 < updatedRows.Length))) {
+                    result = (result + this._tBL_R_DOCKETTableAdapter.Update(updatedRows));
+                    allChangedRows.AddRange(updatedRows);
+                }
+            }
+            if ((this._tBL_R_STOCKPILETableAdapter != null)) {
+                global::System.Data.DataRow[] updatedRows = dataSet.TBL_R_STOCKPILE.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
+                updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
+                if (((updatedRows != null) 
+                            && (0 < updatedRows.Length))) {
+                    result = (result + this._tBL_R_STOCKPILETableAdapter.Update(updatedRows));
                     allChangedRows.AddRange(updatedRows);
                 }
             }
@@ -20312,12 +24425,12 @@ SELECT STOCKPILE_CODE, STOCKPILE_NAME, STOCKPILE_LOKASI, STOCKPILE_DESC, STOCKPI
                     allChangedRows.AddRange(updatedRows);
                 }
             }
-            if ((this._tBL_R_STOCKPILETableAdapter != null)) {
-                global::System.Data.DataRow[] updatedRows = dataSet.TBL_R_STOCKPILE.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
+            if ((this._tBL_M_CONFIGURATIONTableAdapter != null)) {
+                global::System.Data.DataRow[] updatedRows = dataSet.TBL_M_CONFIGURATION.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
                 updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
                 if (((updatedRows != null) 
                             && (0 < updatedRows.Length))) {
-                    result = (result + this._tBL_R_STOCKPILETableAdapter.Update(updatedRows));
+                    result = (result + this._tBL_M_CONFIGURATIONTableAdapter.Update(updatedRows));
                     allChangedRows.AddRange(updatedRows);
                 }
             }
@@ -20336,6 +24449,22 @@ SELECT STOCKPILE_CODE, STOCKPILE_NAME, STOCKPILE_LOKASI, STOCKPILE_DESC, STOCKPI
                 if (((addedRows != null) 
                             && (0 < addedRows.Length))) {
                     result = (result + this._tBL_M_AKSESTableAdapter.Update(addedRows));
+                    allAddedRows.AddRange(addedRows);
+                }
+            }
+            if ((this._tBL_R_DOCKETTableAdapter != null)) {
+                global::System.Data.DataRow[] addedRows = dataSet.TBL_R_DOCKET.Select(null, null, global::System.Data.DataViewRowState.Added);
+                if (((addedRows != null) 
+                            && (0 < addedRows.Length))) {
+                    result = (result + this._tBL_R_DOCKETTableAdapter.Update(addedRows));
+                    allAddedRows.AddRange(addedRows);
+                }
+            }
+            if ((this._tBL_R_STOCKPILETableAdapter != null)) {
+                global::System.Data.DataRow[] addedRows = dataSet.TBL_R_STOCKPILE.Select(null, null, global::System.Data.DataViewRowState.Added);
+                if (((addedRows != null) 
+                            && (0 < addedRows.Length))) {
+                    result = (result + this._tBL_R_STOCKPILETableAdapter.Update(addedRows));
                     allAddedRows.AddRange(addedRows);
                 }
             }
@@ -20419,11 +24548,11 @@ SELECT STOCKPILE_CODE, STOCKPILE_NAME, STOCKPILE_LOKASI, STOCKPILE_DESC, STOCKPI
                     allAddedRows.AddRange(addedRows);
                 }
             }
-            if ((this._tBL_R_STOCKPILETableAdapter != null)) {
-                global::System.Data.DataRow[] addedRows = dataSet.TBL_R_STOCKPILE.Select(null, null, global::System.Data.DataViewRowState.Added);
+            if ((this._tBL_M_CONFIGURATIONTableAdapter != null)) {
+                global::System.Data.DataRow[] addedRows = dataSet.TBL_M_CONFIGURATION.Select(null, null, global::System.Data.DataViewRowState.Added);
                 if (((addedRows != null) 
                             && (0 < addedRows.Length))) {
-                    result = (result + this._tBL_R_STOCKPILETableAdapter.Update(addedRows));
+                    result = (result + this._tBL_M_CONFIGURATIONTableAdapter.Update(addedRows));
                     allAddedRows.AddRange(addedRows);
                 }
             }
@@ -20437,11 +24566,11 @@ SELECT STOCKPILE_CODE, STOCKPILE_NAME, STOCKPILE_LOKASI, STOCKPILE_DESC, STOCKPI
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private int UpdateDeletedRows(DSJT18 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
             int result = 0;
-            if ((this._tBL_R_STOCKPILETableAdapter != null)) {
-                global::System.Data.DataRow[] deletedRows = dataSet.TBL_R_STOCKPILE.Select(null, null, global::System.Data.DataViewRowState.Deleted);
+            if ((this._tBL_M_CONFIGURATIONTableAdapter != null)) {
+                global::System.Data.DataRow[] deletedRows = dataSet.TBL_M_CONFIGURATION.Select(null, null, global::System.Data.DataViewRowState.Deleted);
                 if (((deletedRows != null) 
                             && (0 < deletedRows.Length))) {
-                    result = (result + this._tBL_R_STOCKPILETableAdapter.Update(deletedRows));
+                    result = (result + this._tBL_M_CONFIGURATIONTableAdapter.Update(deletedRows));
                     allChangedRows.AddRange(deletedRows);
                 }
             }
@@ -20522,6 +24651,22 @@ SELECT STOCKPILE_CODE, STOCKPILE_NAME, STOCKPILE_LOKASI, STOCKPILE_DESC, STOCKPI
                 if (((deletedRows != null) 
                             && (0 < deletedRows.Length))) {
                     result = (result + this._tBL_T_TRANSAKSI_18TableAdapter.Update(deletedRows));
+                    allChangedRows.AddRange(deletedRows);
+                }
+            }
+            if ((this._tBL_R_STOCKPILETableAdapter != null)) {
+                global::System.Data.DataRow[] deletedRows = dataSet.TBL_R_STOCKPILE.Select(null, null, global::System.Data.DataViewRowState.Deleted);
+                if (((deletedRows != null) 
+                            && (0 < deletedRows.Length))) {
+                    result = (result + this._tBL_R_STOCKPILETableAdapter.Update(deletedRows));
+                    allChangedRows.AddRange(deletedRows);
+                }
+            }
+            if ((this._tBL_R_DOCKETTableAdapter != null)) {
+                global::System.Data.DataRow[] deletedRows = dataSet.TBL_R_DOCKET.Select(null, null, global::System.Data.DataViewRowState.Deleted);
+                if (((deletedRows != null) 
+                            && (0 < deletedRows.Length))) {
+                    result = (result + this._tBL_R_DOCKETTableAdapter.Update(deletedRows));
                     allChangedRows.AddRange(deletedRows);
                 }
             }
@@ -20629,6 +24774,16 @@ SELECT STOCKPILE_CODE, STOCKPILE_NAME, STOCKPILE_LOKASI, STOCKPILE_DESC, STOCKPI
             }
             if (((this._tBL_R_STOCKPILETableAdapter != null) 
                         && (this.MatchTableAdapterConnection(this._tBL_R_STOCKPILETableAdapter.Connection) == false))) {
+                throw new global::System.ArgumentException("All TableAdapters managed by a TableAdapterManager must use the same connection s" +
+                        "tring.");
+            }
+            if (((this._tBL_R_DOCKETTableAdapter != null) 
+                        && (this.MatchTableAdapterConnection(this._tBL_R_DOCKETTableAdapter.Connection) == false))) {
+                throw new global::System.ArgumentException("All TableAdapters managed by a TableAdapterManager must use the same connection s" +
+                        "tring.");
+            }
+            if (((this._tBL_M_CONFIGURATIONTableAdapter != null) 
+                        && (this.MatchTableAdapterConnection(this._tBL_M_CONFIGURATIONTableAdapter.Connection) == false))) {
                 throw new global::System.ArgumentException("All TableAdapters managed by a TableAdapterManager must use the same connection s" +
                         "tring.");
             }
@@ -20772,6 +24927,24 @@ SELECT STOCKPILE_CODE, STOCKPILE_NAME, STOCKPILE_LOKASI, STOCKPILE_DESC, STOCKPI
                         adaptersWithAcceptChangesDuringUpdate.Add(this._tBL_R_STOCKPILETableAdapter.Adapter);
                     }
                 }
+                if ((this._tBL_R_DOCKETTableAdapter != null)) {
+                    revertConnections.Add(this._tBL_R_DOCKETTableAdapter, this._tBL_R_DOCKETTableAdapter.Connection);
+                    this._tBL_R_DOCKETTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(workConnection));
+                    this._tBL_R_DOCKETTableAdapter.Transaction = ((global::System.Data.SqlClient.SqlTransaction)(workTransaction));
+                    if (this._tBL_R_DOCKETTableAdapter.Adapter.AcceptChangesDuringUpdate) {
+                        this._tBL_R_DOCKETTableAdapter.Adapter.AcceptChangesDuringUpdate = false;
+                        adaptersWithAcceptChangesDuringUpdate.Add(this._tBL_R_DOCKETTableAdapter.Adapter);
+                    }
+                }
+                if ((this._tBL_M_CONFIGURATIONTableAdapter != null)) {
+                    revertConnections.Add(this._tBL_M_CONFIGURATIONTableAdapter, this._tBL_M_CONFIGURATIONTableAdapter.Connection);
+                    this._tBL_M_CONFIGURATIONTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(workConnection));
+                    this._tBL_M_CONFIGURATIONTableAdapter.Transaction = ((global::System.Data.SqlClient.SqlTransaction)(workTransaction));
+                    if (this._tBL_M_CONFIGURATIONTableAdapter.Adapter.AcceptChangesDuringUpdate) {
+                        this._tBL_M_CONFIGURATIONTableAdapter.Adapter.AcceptChangesDuringUpdate = false;
+                        adaptersWithAcceptChangesDuringUpdate.Add(this._tBL_M_CONFIGURATIONTableAdapter.Adapter);
+                    }
+                }
                 // 
                 //---- Perform updates -----------
                 //
@@ -20877,6 +25050,14 @@ SELECT STOCKPILE_CODE, STOCKPILE_NAME, STOCKPILE_LOKASI, STOCKPILE_DESC, STOCKPI
                 if ((this._tBL_R_STOCKPILETableAdapter != null)) {
                     this._tBL_R_STOCKPILETableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(revertConnections[this._tBL_R_STOCKPILETableAdapter]));
                     this._tBL_R_STOCKPILETableAdapter.Transaction = null;
+                }
+                if ((this._tBL_R_DOCKETTableAdapter != null)) {
+                    this._tBL_R_DOCKETTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(revertConnections[this._tBL_R_DOCKETTableAdapter]));
+                    this._tBL_R_DOCKETTableAdapter.Transaction = null;
+                }
+                if ((this._tBL_M_CONFIGURATIONTableAdapter != null)) {
+                    this._tBL_M_CONFIGURATIONTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(revertConnections[this._tBL_M_CONFIGURATIONTableAdapter]));
+                    this._tBL_M_CONFIGURATIONTableAdapter.Transaction = null;
                 }
                 if ((0 < adaptersWithAcceptChangesDuringUpdate.Count)) {
                     global::System.Data.Common.DataAdapter[] adapters = new System.Data.Common.DataAdapter[adaptersWithAcceptChangesDuringUpdate.Count];

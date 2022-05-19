@@ -87,7 +87,6 @@ namespace WinForms
                 {
                     coll.DefaultCellStyle.BackColor = Color.White;
                 }
-
         }
 
         private void pv_sub_call_load_data()
@@ -109,8 +108,6 @@ namespace WinForms
             {
                 MessageBox.Show("Error : \n" + ex.Message.ToString() + " -- " + i_str_filter);
             }
-
-
         }
         #endregion
 
@@ -123,7 +120,6 @@ namespace WinForms
             txt_page.Text = "" + (i_int_page + 1);
 
             pv_sub_call_load_data();
-
         }
 
         private void btn_prev_Click(object sender, EventArgs e)
@@ -149,7 +145,6 @@ namespace WinForms
         {
             pv_sub_call_load_data();
         }
-
 
         #endregion
 

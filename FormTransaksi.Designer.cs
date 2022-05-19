@@ -30,9 +30,9 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormTransaksi));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -46,6 +46,8 @@
             this.lbl_starttimbang = new System.Windows.Forms.Label();
             this.txtGross = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.lbl_Docket = new System.Windows.Forms.Label();
+            this.btn_AturKode = new System.Windows.Forms.Button();
             this.btn_cekport = new System.Windows.Forms.Button();
             this.btnSubmit = new System.Windows.Forms.Button();
             this.cbEntity = new System.Windows.Forms.ComboBox();
@@ -82,6 +84,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.panel4 = new System.Windows.Forms.Panel();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -95,6 +98,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgv_transaksi)).BeginInit();
             this.panel6.SuspendLayout();
             this.panel3.SuspendLayout();
+            this.panel4.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -121,8 +125,8 @@
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.panel4);
             this.panel1.Controls.Add(this.tableLayoutPanel1);
-            this.panel1.Controls.Add(this.groupBox1);
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(3, 3);
@@ -245,7 +249,8 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBox1.Controls.Add(this.lbl_Docket);
+            this.groupBox1.Controls.Add(this.btn_AturKode);
             this.groupBox1.Controls.Add(this.btn_cekport);
             this.groupBox1.Controls.Add(this.btnSubmit);
             this.groupBox1.Controls.Add(this.cbEntity);
@@ -260,11 +265,33 @@
             this.groupBox1.Controls.Add(this.cbSumber);
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.label4);
-            this.groupBox1.Location = new System.Drawing.Point(0, 45);
+            this.groupBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.groupBox1.Location = new System.Drawing.Point(0, 0);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(897, 224);
+            this.groupBox1.Size = new System.Drawing.Size(897, 236);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
+            // 
+            // lbl_Docket
+            // 
+            this.lbl_Docket.AutoSize = true;
+            this.lbl_Docket.Location = new System.Drawing.Point(10, 155);
+            this.lbl_Docket.Name = "lbl_Docket";
+            this.lbl_Docket.Size = new System.Drawing.Size(35, 13);
+            this.lbl_Docket.TabIndex = 43;
+            this.lbl_Docket.Text = "label9";
+            // 
+            // btn_AturKode
+            // 
+            this.btn_AturKode.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.btn_AturKode.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_AturKode.Location = new System.Drawing.Point(325, 47);
+            this.btn_AturKode.Name = "btn_AturKode";
+            this.btn_AturKode.Size = new System.Drawing.Size(98, 24);
+            this.btn_AturKode.TabIndex = 42;
+            this.btn_AturKode.Text = "Atur Kode";
+            this.btn_AturKode.UseVisualStyleBackColor = false;
+            this.btn_AturKode.Click += new System.EventHandler(this.btn_AturKode_Click);
             // 
             // btn_cekport
             // 
@@ -419,7 +446,7 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(897, 45);
+            this.panel2.Size = new System.Drawing.Size(897, 39);
             this.panel2.TabIndex = 0;
             // 
             // lbl_jamtimbang
@@ -462,17 +489,17 @@
             // 
             this.dgv_transaksi.AllowUserToAddRows = false;
             this.dgv_transaksi.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dgv_transaksi.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dgv_transaksi.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
             this.dgv_transaksi.BackgroundColor = System.Drawing.Color.Azure;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgv_transaksi.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgv_transaksi.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.dgv_transaksi.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv_transaksi.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgv_transaksi.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
@@ -481,8 +508,8 @@
             this.dgv_transaksi.Name = "dgv_transaksi";
             this.dgv_transaksi.ReadOnly = true;
             this.dgv_transaksi.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dgv_transaksi.RowsDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dgv_transaksi.RowsDefaultCellStyle = dataGridViewCellStyle6;
             this.dgv_transaksi.RowTemplate.Height = 31;
             this.dgv_transaksi.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgv_transaksi.Size = new System.Drawing.Size(667, 459);
@@ -681,6 +708,15 @@
             // 
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
+            // panel4
+            // 
+            this.panel4.Controls.Add(this.groupBox1);
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel4.Location = new System.Drawing.Point(0, 39);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(897, 236);
+            this.panel4.TabIndex = 3;
+            // 
             // FormTransaksi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -710,6 +746,7 @@
             this.panel6.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
+            this.panel4.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -734,16 +771,10 @@
         private System.Windows.Forms.Label lbl_starttimbang;
         private System.Windows.Forms.TextBox txtGross;
         private System.Windows.Forms.Button btnSubmit;
-        private System.Windows.Forms.ComboBox cbEntity;
-        private System.Windows.Forms.ComboBox cbUnit;
-        private System.Windows.Forms.ComboBox cbStockpile;
-        private System.Windows.Forms.ComboBox cbProduct;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.TextBox txtLoader;
-        private System.Windows.Forms.ComboBox cbSumber;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Panel panel5;
@@ -765,5 +796,14 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button btn_cekport;
         private System.Windows.Forms.Timer timer1;
+        public System.Windows.Forms.ComboBox cbUnit;
+        public System.Windows.Forms.TextBox txtLoader;
+        private System.Windows.Forms.Button btn_AturKode;
+        public System.Windows.Forms.ComboBox cbEntity;
+        public System.Windows.Forms.ComboBox cbStockpile;
+        public System.Windows.Forms.ComboBox cbProduct;
+        public System.Windows.Forms.ComboBox cbSumber;
+        public System.Windows.Forms.Label lbl_Docket;
+        private System.Windows.Forms.Panel panel4;
     }
 }

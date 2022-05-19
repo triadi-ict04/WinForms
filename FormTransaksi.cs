@@ -11,6 +11,7 @@ using System.IO.Ports;
 using System.Threading;
 using System.Text.RegularExpressions;
 using System.Linq;
+using System.Web.Script.Serialization;
 
 namespace WinForms
 {
@@ -27,23 +28,34 @@ namespace WinForms
         StringBuilder builder = new StringBuilder(30);
         string statForm = "1";
         int stat_timbang = 0;
-        public FormTransaksi()
+
+        public static string code, unit, product, loader, cpp, stockpile;
+
+        public FormTransaksi(string code, string unit, string product, string loader, string cpp, string stockpile)
         {
             this.myDelegate = new AddDataDelegate(setTextTimbangan);
 
             InitializeComponent();
 
             pv_sub_call_load_data();
-            pv_cust_loadUnit();
-            pv_cust_loadEntity();
-            pv_cust_loadCPP();
-            pv_cust_loadProduct();
-            pv_cust_loadStockpile();
+            //pv_cust_loadUnit();
+            //pv_cust_loadEntity();
+            //pv_cust_loadCPP();
+            //pv_cust_loadProduct();
+            //pv_cust_loadStockpile();
+            pv_cust_loadDocket();
 
             timer1.Start();
 
             openCom();
-            
+
+            lbl_Docket.Text = code;
+            cbUnit.Text = unit;
+            cbProduct.Text = product;
+            txtLoader.Text = loader;
+            cbSumber.Text = cpp;
+            cbStockpile.Text = stockpile;
+
         }
         private void timer1_Tick(object sender, EventArgs e)
         {
@@ -149,7 +161,7 @@ namespace WinForms
             cbStockpile.AutoCompleteSource = AutoCompleteSource.CustomSource;
             cbStockpile.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
             cbStockpile.AutoCompleteCustomSource = auto;
-           
+
         }
 
         private void pv_cust_loadProduct()
@@ -183,7 +195,7 @@ namespace WinForms
             cbProduct.AutoCompleteSource = AutoCompleteSource.CustomSource;
             cbProduct.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
             cbProduct.AutoCompleteCustomSource = auto;
-            
+
         }
 
         private void pv_cust_loadCPP()
@@ -208,7 +220,6 @@ namespace WinForms
             {
                 auto.Add(i_dset_data.Tables[0].Rows[x]["CPP_ENTITY"].ToString());
             }
-
 
             cbSumber.DataSource = i_dset_data.Tables[0];
             cbSumber.ValueMember = i_dset_data.Tables[0].Columns["CPP_CODE"].ColumnName.ToString();
@@ -294,6 +305,59 @@ namespace WinForms
             cbUnitTare.AutoCompleteCustomSource = auto;
         }
 
+        private void pv_cust_loadDocket()
+        {
+            DSJT18TableAdapters.VW_R_DOCKETTableAdapter i_tadap_data = new DSJT18TableAdapters.VW_R_DOCKETTableAdapter();
+            DSJT18.VW_R_DOCKETDataTable i_dtab_data = new DSJT18.VW_R_DOCKETDataTable();
+            System.Data.DataRow[] i_drow_data;
+            DataSet i_dset_data = new DataSet();
+
+            i_drow_data = i_tadap_data.GetData().Select("", "DOCKET_UNIT_NO ASC");
+
+            foreach (var i_data in i_drow_data)
+            {
+                i_dtab_data.ImportRow(i_data);
+            }
+
+            i_dset_data.Tables.Add(i_dtab_data);
+
+            AutoCompleteStringCollection auto = new AutoCompleteStringCollection();
+
+            for (int x = 0; x <= i_dset_data.Tables[0].Rows.Count - 1; x++)
+            {
+                auto.Add(i_dset_data.Tables[0].Rows[x]["DOCKET_UNIT_NO"].ToString());
+            }
+
+            cbUnit.DataSource = i_dset_data.Tables[0];
+            cbUnit.ValueMember = i_dset_data.Tables[0].Columns["DOCKET_UNIT_NO"].ColumnName.ToString();
+            cbUnit.DisplayMember = i_dset_data.Tables[0].Columns["DOCKET_UNIT_NO"].ColumnName.ToString();
+
+            cbUnit.AutoCompleteSource = AutoCompleteSource.CustomSource;
+            cbUnit.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
+            cbUnit.AutoCompleteCustomSource = auto;
+
+
+            cbEntity.DataSource = i_dset_data.Tables[0];
+            cbEntity.ValueMember = i_dset_data.Tables[0].Columns["ENTITY_NAME"].ColumnName.ToString();
+            cbEntity.DisplayMember = i_dset_data.Tables[0].Columns["ENTITY_NAME"].ColumnName.ToString();
+
+            cbSumber.DataSource = i_dset_data.Tables[0];
+            cbSumber.ValueMember = i_dset_data.Tables[0].Columns["DOCKET_CPP"].ColumnName.ToString();
+            cbSumber.DisplayMember = i_dset_data.Tables[0].Columns["DOCKET_CPP"].ColumnName.ToString();
+
+            cbProduct.DataSource = i_dset_data.Tables[0];
+            cbProduct.ValueMember = i_dset_data.Tables[0].Columns["DOCKET_PRODUCT"].ColumnName.ToString();
+            cbProduct.DisplayMember = i_dset_data.Tables[0].Columns["DOCKET_PRODUCT"].ColumnName.ToString();
+
+            cbStockpile.DataSource = i_dset_data.Tables[0];
+            cbStockpile.ValueMember = i_dset_data.Tables[0].Columns["DOCKET_STOCKPILE"].ColumnName.ToString();
+            cbStockpile.DisplayMember = i_dset_data.Tables[0].Columns["DOCKET_STOCKPILE"].ColumnName.ToString();
+
+            //cbEntity.AutoCompleteSource = AutoCompleteSource.CustomSource;
+            //cbEntity.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
+            //cbEntity.AutoCompleteCustomSource = auto;
+        }
+
         private void openCom()
         {
             try
@@ -316,7 +380,7 @@ namespace WinForms
             }
             catch (Exception Ex)
             {
-                MessageBox.Show("Error Opening Port (Restart Aplication): " + Ex.Message.ToString());
+                MessageBox.Show("Error Opening Port (Restart Application): " + Ex.Message.ToString());
             }
         }
         private void closeCom()
@@ -446,6 +510,7 @@ namespace WinForms
             // if (builder.ToString().ToUpper().Contains(Environment.NewLine))
             if (builder.ToString().ToUpper().Contains("KG"))
             {
+                //output = builder.ToString().ToUpper().Replace(Environment.NewLine, "").Trim();
                 output = builder.ToString().ToUpper().Replace("KG", "").Trim();
                 txtGross.Text = "0";
                 lbl_tare.Text = "0";
@@ -511,7 +576,7 @@ namespace WinForms
                     DSJT18TableAdapters.TBL_T_TRANSAKSI_18TableAdapter i_tadap = new DSJT18TableAdapters.TBL_T_TRANSAKSI_18TableAdapter();
 
                     string i_guid = Guid.NewGuid().ToString();
-                    //System.Windows.Forms.Form f = System.Windows.Forms.Application.OpenForms["Form2"];
+                    System.Windows.Forms.Form f = System.Windows.Forms.Application.OpenForms["FormMenu"];
 
                     i_tadap.Insert_trans(
                         //cbUnit.SelectedValue.ToString(),
@@ -524,15 +589,13 @@ namespace WinForms
                         Convert.ToInt32(txtGross.Text),
                         Convert.ToInt32(txtTare.Text),
                         Convert.ToDateTime(lbl_jamtimbang.Text),
-                        "TR",
+                         ((FormMenu)f).lbl_username.Text,
                         i_guid,
-                        Convert.ToDateTime(lbl_starttimbang.Text)
-
+                        Convert.ToDateTime(lbl_starttimbang.Text),
+                        lbl_Docket.Text.ToString()
                         //Convert.ToInt32(txtGross.Text) - Convert.ToInt32(txtTare.Text),
                         //Properties.Settings.Default["Code"].ToString(),
                         );
-
-
 
                     //foreach (Form form in Application.OpenForms)
                     //{
@@ -543,20 +606,20 @@ namespace WinForms
                     //}
 
 
-                    //System.Windows.Forms.Form pr = System.Windows.Forms.Application.OpenForms["Frm_print"];
+                    System.Windows.Forms.Form pr = System.Windows.Forms.Application.OpenForms["FormPrintTransaksi"];
 
-                    //if (pr != null)
-                    //{
-                    //    pr.Close();
-                    //}
+                    if (pr != null)
+                    {
+                        pr.Close();
+                    }
 
 
 
                     MessageBox.Show("Insert data berhasil");
 
-                    //FormPrint print = new FormPrint(i_guid);
+                    FormPrintTransaksi print = new FormPrintTransaksi(i_guid);
 
-                    //print.Show();
+                    print.Show();
 
 
                 }
@@ -587,11 +650,50 @@ namespace WinForms
 
         private void cbUnit_Leave(object sender, EventArgs e)
         {
-            DSJT18TableAdapters.TBL_T_TARE_UNITTableAdapter i_tadap_data = new DSJT18TableAdapters.TBL_T_TARE_UNITTableAdapter();
+            DSJT18TableAdapters.VW_R_DOCKETTableAdapter i_tadap_data = new DSJT18TableAdapters.VW_R_DOCKETTableAdapter();
+            DSJT18.VW_R_DOCKETDataTable i_dtab_data = new DSJT18.VW_R_DOCKETDataTable();
+            System.Data.DataRow[] i_drow_data;
+            DataSet i_dset_data = new DataSet();
 
-            var tare = i_tadap_data.GET_TARE_UNIT(cbUnit.Text);
+            i_drow_data = i_tadap_data.GetDataUnit(cbUnit.Text).Select();
+            //i_drow_data = i_tadap_data.GetData().Select("", "DOCKET_UNIT_NO");
 
-            txtTare.Text = tare.ToString();
+            foreach (var i_data in i_drow_data)
+            {
+                i_dtab_data.ImportRow(i_data);
+            }
+
+            i_dset_data.Tables.Add(i_dtab_data);
+
+            var col = i_dset_data.Tables[0];
+
+            //string code = col.Rows[0][0].ToString();
+            //string unit = col.Rows[0][1].ToString();
+            //string product = col.Rows[0][2].ToString();
+            //string loader = col.Rows[0][3].ToString();
+            //string cpp = col.Rows[0][4].ToString();
+            //string stockpile = col.Rows[0][5].ToString();
+
+            //cbUnit.Text = unit;
+            //cbProduct.Text = product;
+            //txtLoader.Text = loader;
+            //cbSumber.Text = cpp;
+            //cbStockpile.Text = stockpile;
+
+            cbEntity.ValueMember = i_dset_data.Tables[0].Columns["ENTITY_NAME"].ColumnName.ToString();
+            cbEntity.SelectedValue = i_dset_data.Tables[0].Columns["ENTITY_NAME"].ColumnName.ToString();
+
+            cbSumber.ValueMember = i_dset_data.Tables[0].Columns["DOCKET_CPP"].ColumnName.ToString();
+            cbSumber.SelectedValue = i_dset_data.Tables[0].Columns["DOCKET_CPP"].ColumnName.ToString();
+
+            cbProduct.ValueMember = i_dset_data.Tables[0].Columns["DOCKET_PRODUCT"].ColumnName.ToString();
+            cbProduct.SelectedValue = i_dset_data.Tables[0].Columns["DOCKET_PRODUCT"].ColumnName.ToString();
+
+            txtLoader.Text = i_dset_data.Tables[0].Rows[0][3].ToString();
+
+            cbStockpile.ValueMember = i_dset_data.Tables[0].Columns["DOCKET_STOCKPILE"].ColumnName.ToString();
+            cbStockpile.SelectedValue = i_dset_data.Tables[0].Columns["DOCKET_STOCKPILE"].ColumnName.ToString();
+
         }
 
         private void cbUnit_SelectedIndexChanged(object sender, EventArgs e)
@@ -605,5 +707,31 @@ namespace WinForms
             txtNetto.Text = (gross - tare).ToString();
         }
 
+        private void btn_AturKode_Click(object sender, EventArgs e)
+        {
+            //Form2 frm2 = new Form2();
+            FormDocket dock = new FormDocket(this);
+
+            FormCollection fc = Application.OpenForms;
+            var stat = 0;
+
+            foreach (Form frm in fc)
+            {
+
+                //MessageBox.Show(""+ frm.Name);
+                if (frm.Name == "FormDocket")
+                {
+                    stat = 1;
+                }
+            }
+            if (stat == 0)
+            {
+                dock.Show();
+            }
+
+            dock.BringToFront();
+
+            //pv_cust_load_listSource();
+        }
     }
 }
